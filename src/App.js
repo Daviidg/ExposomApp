@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+//import './style/App.css';
+import SpainMap from './components/spainMap.jsx'
+import fumadores from './assets/data/fumadores-ccaa.json'
 
 function App() {
+  const data = fumadores.Datos.Metricas[0].Datos
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>ExposomApp</h1>
+      <SpainMap data={data} reportFound={'reportFound'} />
     </div>
   );
 }
