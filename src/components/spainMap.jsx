@@ -48,7 +48,7 @@ const SpainMap = ({ data, reportFound }) => {
     setGeoFile(object)
   }, [reportFound])
 
-  
+
 
   const coloringMap = (porcentaje) => {
     const k = (maxValue-minValue)/colorsNumber;
@@ -58,7 +58,7 @@ const SpainMap = ({ data, reportFound }) => {
       }
     }
   }
-  
+
   const tooltipText = ({
     Valor,
     Parametro,
@@ -94,40 +94,37 @@ const SpainMap = ({ data, reportFound }) => {
   }
 
   return (
-    <>
-      <div className={`mapa ${styles.container}`} data-tip='' data-for='toolitpMap'>
-        <svg className={styles.mapa} viewBox='100 0 800 520'>
-          <g className='ESP_adm1'>
-            <CanaryIslandsContainer closed={true} />
-            {geoFile.map((d, i) => (
-              <path
-                className={`${styles.enabled}`}
-                d={geoPath().projection(projection)(d)}
-                fill={coloringMap(d.properties.Valor)}
-                key={`path-${i}`}
-                onMouseEnter={() => setContent(tooltipText(d.properties))}
-                onMouseLeave={() => setContent('')}
-                stroke='#FFFFFF'
-                strokeWidth={0.5}
-              />
-            ))}
-            <foreignObject width="100" height="200" x="700" y="320">
-              <div>
-              {colorList.map((d,i) => {
-                return <div key={`leg-${i}`} className={'legend-box'}> 
-                  <div className={'legend-color'} style={{backgroundColor: d}}></div>
-                  <p className={'legend-numbers'}>{`${Math.round(maxValue-(i)*(maxValue-minValue)/colorsNumber)}-${Math.round(maxValue-(i+1)*(maxValue-minValue)/colorsNumber)}`}
-                  </p>
-                </div>     
-               })}
-               </div>
-            </foreignObject>
-          </g>
-        </svg>
-        {hasMounted && <ReactTooltip id='toolitpMap'>{content}</ReactTooltip>}
-      </div>
-      <h2>Footer here</h2>
-    </>
+    <div className={`mapa ${styles.container}`} data-tip='' data-for='toolitpMap'>
+      <svg className={styles.mapa} viewBox='100 0 800 520'>
+        <g className='ESP_adm1'>
+          <CanaryIslandsContainer closed={true} />
+          {geoFile.map((d, i) => (
+            <path
+              className={`${styles.enabled}`}
+              d={geoPath().projection(projection)(d)}
+              fill={coloringMap(d.properties.Valor)}
+              key={`path-${i}`}
+              onMouseEnter={() => setContent(tooltipText(d.properties))}
+              onMouseLeave={() => setContent('')}
+              stroke='#FFFFFF'
+              strokeWidth={0.5}
+            />
+          ))}
+          <foreignObject width="100" height="200" x="700" y="320">
+            <div>
+            {colorList.map((d,i) => {
+              return <div key={`leg-${i}`} className={'legend-box'}>
+                <div className={'legend-color'} style={{backgroundColor: d}}></div>
+                <p className={'legend-numbers'}>{`${Math.round(maxValue-(i)*(maxValue-minValue)/colorsNumber)}-${Math.round(maxValue-(i+1)*(maxValue-minValue)/colorsNumber)}`}
+                </p>
+              </div>
+             })}
+             </div>
+          </foreignObject>
+        </g>
+      </svg>
+      {hasMounted && <ReactTooltip id='toolitpMap'>{content}</ReactTooltip>}
+    </div>
   )
 }
 

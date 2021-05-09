@@ -1,0 +1,40 @@
+.footer-wrapper {
+  margin-top: 50px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #262431;
+}
+.footer {
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.footer-col-wrapper {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer-col {
+  width: 90%;
+  margin-bottom: 2.25rem;
+}
+.footer-col h4 {
+  color: white;
+  font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
+  margin-bottom: 5%;
+}
+.footer p {
+  color: white;
+  font: 400 0.95rem/1.5rem "Open Sans", sans-serif;
+}
