@@ -13,10 +13,10 @@
 }
 .navbar-logo {
   position: fixed;
-  width: 170px;
+  width: 200px;
 	height: auto;
-  top: 20px;
-  left: 25px;
+  top: 25px;
+  left: 30px;
 }
 .scroll-wrapper {
   position:absolute;
@@ -24,10 +24,10 @@
 
 }
 .map-wrapper {
-  width: 80%;
+  width: 70%;
   height: auto;
   margin-top: 100px;
-  margin-left: 300px;
+  margin-left: 25%;
   background-color: azure;
   border-radius: 10px;
   box-shadow: 5px 5px #708090;

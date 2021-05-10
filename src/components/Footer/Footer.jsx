@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { SocialIcon } from 'react-social-icons';
 import './Footer.css';
 
 class Footer extends Component {
@@ -10,10 +11,48 @@ class Footer extends Component {
             <div className="footer-col-wrapper">
               <div className="footer-col">
                 <h4>Sobre ExposomApp</h4>
-                <p> Som una eina de convergència i representació de dades de diferents orígens</p>
+                <p> Som una grup d'estudiants que ha desenvolupat una eina de convergència i representació de dades de diferents orígens en el camp de l'exposoma</p>
+              </div>
+            </div>
+            <div className="footer-col-wrapper">
+              <div className="footer-col">
+                <h4>Links Importants</h4>
+                <ul className="list-footer">
+                  <li>
+                    Repte proposat per <a href="https://www.clinicbarcelona.org/en/professionals/laura-mezquita">Laura Mezquita </a>
+                  </li>
+                  <li>
+                    Eina pensada per facilitar el treball i la investigació de l'exposoma en el projecte <a href="https://www.clinicbarcelona.org/en/idibaps/research-areas/oncology-and-haematology/translational-genomics-and-targeted-therapies-in-solid-tumours/projects"> Translational Genomics</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="footer-col-wrapper">
+              <div className="footer-col">
+                <h4>Social Media</h4>
+                <div className="social-icons">
+                  <li>
+                    <SocialIcon network="facebook" bgColor="white"/>
+                  </li>
+                  <li>
+                    <SocialIcon network="twitter" bgColor="white"/>
+                  </li>
+                  <li>
+                    <SocialIcon network="instagram" bgColor="white"/>
+                  </li>
+                  <li>
+                    <SocialIcon network="linkedin" bgColor="white"/>
+                  </li>
+                  <li>
+                    <SocialIcon network="email" bgColor="white"/>
+                  </li>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="footer-copyright">
+          Copyright © ExposomApp - Prototipo funcional
         </div>
       </div>
     );
