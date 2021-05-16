@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style/App.css';
-import fumadores from './assets/data/fumadores-ccaa.json';
+import fumadores from './assets/data/fumadores-prov.json';
+import jsonData from './assets/data/data.json';
 import Selector from './components/Selector/Selector.jsx';
 import MapDisplayer from './components/MapDisplayer/MapDisplayer.jsx';
 import Footer from './components/Footer/Footer.jsx';
@@ -13,7 +14,8 @@ class App extends Component {
     super();
     this.state = {
       display: "MapaEspanya1",
-      data: fumadores.Datos.Metricas[0].Datos,
+      data: jsonData,
+      headers: Object.keys(jsonData[0]).slice(3)
     }
   }
 
@@ -24,7 +26,7 @@ class App extends Component {
   }
 
   render() {
-    const { display, data } = this.state;
+    const { display, data, headers } = this.state;
     return (
       <div>
         <div className="main-wrapper">
@@ -37,6 +39,7 @@ class App extends Component {
                   <Selector
                     selectedOption={display}
                     changeValue={this.selectorValueChange.bind(this)}
+                    headers = {headers}
                     />
                 </div>
               </div>
@@ -45,6 +48,7 @@ class App extends Component {
                   <MapDisplayer
                     map={display}
                     data={data}
+                    headers={headers}
                     />
                 </div>
               </div>

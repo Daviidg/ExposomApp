@@ -1,3 +1,6 @@
 {
-    "title": "ExposomeApp"
+    "title": "ExposomeApp",
+    "exposome_list": "Lista de exposomas:",
+    "Radon": "Radón",
+    "Arsenico": "Arsénico(ng/m3)"
 }

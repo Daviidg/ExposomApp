@@ -1,0 +1,470 @@
+[
+    {
+      "Provincia": "Araba/Álava",
+      "Codigo": "01",
+      "Comunidad Autónoma": "País Vasco",
+      "Numero Defunciones CP M(2018)": 32,
+      "Numero Defunciones CP H(2018)": 116,
+      "Arsenico": 0,
+      "Radon": 1
+    },
+    {
+      "Provincia": "Albacete",
+      "Codigo": "02",
+      "Comunidad Autónoma": "Castilla-La Mancha",
+      "Numero Defunciones CP M(2018)": 25,
+      "Numero Defunciones CP H(2018)": 129,
+      "Arsenico": 0,
+      "Radon": 0
+    },
+    {
+      "Provincia": "Alicante",
+      "Codigo": "03",
+      "Comunidad Autónoma": "Comunidad Valenciana",
+      "Numero Defunciones CP M(2018)": 216,
+      "Numero Defunciones CP H(2018)": 650,
+      "Arsenico": 0.4,
+      "Radon": 0
+    },
+    {
+      "Provincia": "Almería",
+      "Codigo": "04",
+      "Comunidad Autónoma": "Andalucía",
+      "Numero Defunciones CP M(2018)": 52,
+      "Numero Defunciones CP H(2018)": 260,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Ávila",
+      "Codigo": "05",
+      "Comunidad Autónoma": "Castilla y León",
+      "Numero Defunciones CP M(2018)": 18,
+      "Numero Defunciones CP H(2018)": 74,
+      "Arsenico": 0.6,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Badajoz",
+      "Codigo": "06",
+      "Comunidad Autónoma": "Extremadura",
+      "Numero Defunciones CP M(2018)": 41,
+      "Numero Defunciones CP H(2018)": 319,
+      "Arsenico": 0.4,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Balears, Illes",
+      "Codigo": "07",
+      "Comunidad Autónoma": "Balears, Illes",
+      "Numero Defunciones CP M(2018)": 116,
+      "Numero Defunciones CP H(2018)": 368,
+      "Arsenico": 0,
+      "Radon": 1
+    },
+    {
+      "Provincia": "Barcelona",
+      "Codigo": "08",
+      "Comunidad Autónoma": "Cataluña",
+      "Numero Defunciones CP M(2018)": 578,
+      "Numero Defunciones CP H(2018)": 1986,
+      "Arsenico": 1,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Burgos",
+      "Codigo": "09",
+      "Comunidad Autónoma": "Castilla y León",
+      "Numero Defunciones CP M(2018)": 38,
+      "Numero Defunciones CP H(2018)": 126,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Caceres",
+      "Codigo": "10",
+      "Comunidad Autónoma": "Extremadura",
+      "Numero Defunciones CP M(2018)": 42,
+      "Numero Defunciones CP H(2018)": 202,
+      "Arsenico": 0.3,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Cadiz",
+      "Codigo": "11",
+      "Comunidad Autónoma": "Andalucía",
+      "Numero Defunciones CP M(2018)": 102,
+      "Numero Defunciones CP H(2018)": 442,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Castellón",
+      "Codigo": "12",
+      "Comunidad Autónoma": "Comunidad Valenciana",
+      "Numero Defunciones CP M(2018)": 61,
+      "Numero Defunciones CP H(2018)": 233,
+      "Arsenico": 0.6,
+      "Radon": 0
+    },
+    {
+      "Provincia": "Ciudad Real",
+      "Codigo": "13",
+      "Comunidad Autónoma": "Castilla-La Mancha",
+      "Numero Defunciones CP M(2018)": 38,
+      "Numero Defunciones CP H(2018)": 231,
+      "Arsenico": 0,
+      "Radon": 0
+    },
+    {
+      "Provincia": "Córdoba",
+      "Codigo": "14",
+      "Comunidad Autónoma": "Andalucía",
+      "Numero Defunciones CP M(2018)": 67,
+      "Numero Defunciones CP H(2018)": 262,
+      "Arsenico": 0.3,
+      "Radon": 2
+    },
+    {
+      "Provincia": "La Coruña",
+      "Codigo": "15",
+      "Comunidad Autónoma": "Galicia",
+      "Numero Defunciones CP M(2018)": 146,
+      "Numero Defunciones CP H(2018)": 511,
+      "Arsenico": 1.8,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Cuenca",
+      "Codigo": "16",
+      "Comunidad Autónoma": "Castilla-La Mancha",
+      "Numero Defunciones CP M(2018)": 11,
+      "Numero Defunciones CP H(2018)": 72,
+      "Arsenico": 0,
+      "Radon": 0
+    },
+    {
+      "Provincia": "Girona",
+      "Codigo": "17",
+      "Comunidad Autónoma": "Cataluña",
+      "Numero Defunciones CP M(2018)": 70,
+      "Numero Defunciones CP H(2018)": 246,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Granada",
+      "Codigo": "18",
+      "Comunidad Autónoma": "Andalucía",
+      "Numero Defunciones CP M(2018)": 79,
+      "Numero Defunciones CP H(2018)": 271,
+      "Arsenico": 0.3,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Guadalajara",
+      "Codigo": "19",
+      "Comunidad Autónoma": "Castilla-La Mancha",
+      "Numero Defunciones CP M(2018)": 21,
+      "Numero Defunciones CP H(2018)": 69,
+      "Arsenico": 0,
+      "Radon": 0
+    },
+    {
+      "Provincia": "Gipuzkoa",
+      "Codigo": "20",
+      "Comunidad Autónoma": "País Vasco",
+      "Numero Defunciones CP M(2018)": 98,
+      "Numero Defunciones CP H(2018)": 289,
+      "Arsenico": 0.5,
+      "Radon": 1
+    },
+    {
+      "Provincia": "Huelva",
+      "Codigo": "21",
+      "Comunidad Autónoma": "Andalucía",
+      "Numero Defunciones CP M(2018)": 34,
+      "Numero Defunciones CP H(2018)": 197,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Huesca",
+      "Codigo": "22",
+      "Comunidad Autónoma": "Aragón",
+      "Numero Defunciones CP M(2018)": 21,
+      "Numero Defunciones CP H(2018)": 78,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Jaén",
+      "Codigo": "23",
+      "Comunidad Autónoma": "Andalucía",
+      "Numero Defunciones CP M(2018)": 41,
+      "Numero Defunciones CP H(2018)": 228,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "León",
+      "Codigo": "24",
+      "Comunidad Autónoma": "Castilla y León",
+      "Numero Defunciones CP M(2018)": 57,
+      "Numero Defunciones CP H(2018)": 223,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Lleida",
+      "Codigo": "25",
+      "Comunidad Autónoma": "Cataluña",
+      "Numero Defunciones CP M(2018)": 36,
+      "Numero Defunciones CP H(2018)": 156,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "La Rioja",
+      "Codigo": "26",
+      "Comunidad Autónoma": "Rioja, La",
+      "Numero Defunciones CP M(2018)": 41,
+      "Numero Defunciones CP H(2018)": 121,
+      "Arsenico": 0.3,
+      "Radon": 1
+    },
+    {
+      "Provincia": "Lugo",
+      "Codigo": "27",
+      "Comunidad Autónoma": "Galicia",
+      "Numero Defunciones CP M(2018)": 40,
+      "Numero Defunciones CP H(2018)": 167,
+      "Arsenico": 1.8,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Madrid",
+      "Codigo": "28",
+      "Comunidad Autónoma": "Madrid, Comunidad de",
+      "Numero Defunciones CP M(2018)": 706,
+      "Numero Defunciones CP H(2018)": 1916,
+      "Arsenico": 0.9,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Málaga",
+      "Codigo": "29",
+      "Comunidad Autónoma": "Andalucía",
+      "Numero Defunciones CP M(2018)": 175,
+      "Numero Defunciones CP H(2018)": 567,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Murcia",
+      "Codigo": "30",
+      "Comunidad Autónoma": "Murcia, Región de",
+      "Numero Defunciones CP M(2018)": 89,
+      "Numero Defunciones CP H(2018)": 476,
+      "Arsenico": 0,
+      "Radon": 1
+    },
+    {
+      "Provincia": "Navarra",
+      "Codigo": "31",
+      "Comunidad Autónoma": "Navarra, Comunidad Foral de",
+      "Numero Defunciones CP M(2018)": 89,
+      "Numero Defunciones CP H(2018)": 250,
+      "Arsenico": 0.2,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Ourense",
+      "Codigo": "32",
+      "Comunidad Autónoma": "Galicia",
+      "Numero Defunciones CP M(2018)": 41,
+      "Numero Defunciones CP H(2018)": 142,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Asturias",
+      "Codigo": "33",
+      "Comunidad Autónoma": "Asturias, Principado de",
+      "Numero Defunciones CP M(2018)": 195,
+      "Numero Defunciones CP H(2018)": 575,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Palencia",
+      "Codigo": "34",
+      "Comunidad Autónoma": "Castilla y León",
+      "Numero Defunciones CP M(2018)": 13,
+      "Numero Defunciones CP H(2018)": 69,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Palmas, Las",
+      "Codigo": "35",
+      "Comunidad Autónoma": "Canarias",
+      "Numero Defunciones CP M(2018)": 146,
+      "Numero Defunciones CP H(2018)": 346,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Pontevedra",
+      "Codigo": "36",
+      "Comunidad Autónoma": "Galicia",
+      "Numero Defunciones CP M(2018)": 124,
+      "Numero Defunciones CP H(2018)": 387,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Salamanca",
+      "Codigo": "37",
+      "Comunidad Autónoma": "Castilla y León",
+      "Numero Defunciones CP M(2018)": 38,
+      "Numero Defunciones CP H(2018)": 147,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Santa Cruz de Tenerife",
+      "Codigo": "38",
+      "Comunidad Autónoma": "Canarias",
+      "Numero Defunciones CP M(2018)": 137,
+      "Numero Defunciones CP H(2018)": 320,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Cantabria",
+      "Codigo": "39",
+      "Comunidad Autónoma": "Cantabria",
+      "Numero Defunciones CP M(2018)": 105,
+      "Numero Defunciones CP H(2018)": 262,
+      "Arsenico": 0,
+      "Radon": 1
+    },
+    {
+      "Provincia": "Segovia",
+      "Codigo": "40",
+      "Comunidad Autónoma": "Castilla y León",
+      "Numero Defunciones CP M(2018)": 21,
+      "Numero Defunciones CP H(2018)": 54,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Sevilla",
+      "Codigo": "41",
+      "Comunidad Autónoma": "Andalucía",
+      "Numero Defunciones CP M(2018)": 146,
+      "Numero Defunciones CP H(2018)": 719,
+      "Arsenico": 0.5,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Soria",
+      "Codigo": "42",
+      "Comunidad Autónoma": "Castilla y León",
+      "Numero Defunciones CP M(2018)": 7,
+      "Numero Defunciones CP H(2018)": 41,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Tarragona",
+      "Codigo": "43",
+      "Comunidad Autónoma": "Cataluña",
+      "Numero Defunciones CP M(2018)": 59,
+      "Numero Defunciones CP H(2018)": 314,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Teruel",
+      "Codigo": "44",
+      "Comunidad Autónoma": "Aragón",
+      "Numero Defunciones CP M(2018)": 7,
+      "Numero Defunciones CP H(2018)": 49,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Toledo",
+      "Codigo": "45",
+      "Comunidad Autónoma": "Castilla-La Mancha",
+      "Numero Defunciones CP M(2018)": 48,
+      "Numero Defunciones CP H(2018)": 303,
+      "Arsenico": 0.3,
+      "Radon": 0
+    },
+    {
+      "Provincia": "Valencia",
+      "Codigo": "46",
+      "Comunidad Autónoma": "Comunidad Valenciana",
+      "Numero Defunciones CP M(2018)": 301,
+      "Numero Defunciones CP H(2018)": 922,
+      "Arsenico": 0.7,
+      "Radon": 0
+    },
+    {
+      "Provincia": "Valladolid",
+      "Codigo": "47",
+      "Comunidad Autónoma": "Castilla y León",
+      "Numero Defunciones CP M(2018)": 74,
+      "Numero Defunciones CP H(2018)": 223,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Bizkaia",
+      "Codigo": "48",
+      "Comunidad Autónoma": "País Vasco",
+      "Numero Defunciones CP M(2018)": 163,
+      "Numero Defunciones CP H(2018)": 497,
+      "Arsenico": 0.3,
+      "Radon": 1
+    },
+    {
+      "Provincia": "Zamora",
+      "Codigo": "49",
+      "Comunidad Autónoma": "Castilla y León",
+      "Numero Defunciones CP M(2018)": 19,
+      "Numero Defunciones CP H(2018)": 96,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Zaragoza",
+      "Codigo": "50",
+      "Comunidad Autónoma": "Aragón",
+      "Numero Defunciones CP M(2018)": 106,
+      "Numero Defunciones CP H(2018)": 415,
+      "Arsenico": 0,
+      "Radon": 2
+    },
+    {
+      "Provincia": "Ceuta",
+      "Codigo": "51",
+      "Comunidad Autónoma": "Ceuta",
+      "Numero Defunciones CP M(2018)": 4,
+      "Numero Defunciones CP H(2018)": 18,
+      "Arsenico": 0,
+      "Radon": 0
+    },
+    {
+      "Provincia": "Melilla",
+      "Codigo": "52",
+      "Comunidad Autónoma": "Melilla",
+      "Numero Defunciones CP M(2018)": 11,
+      "Numero Defunciones CP H(2018)": 25,
+      "Arsenico": 0,
+      "Radon": 0
+    }
+  ]

@@ -5,20 +5,14 @@ import SpainMap from './../spainMap.jsx';
 class MapDisplayer extends Component {
   constructor() {
     super();
-    this.state = {
-    }
+    this.state = {}
   }
 
   render() {
-    const { map, data } = this.props;
+    const { map, data, headers } = this.props;
     return(
       <div>
-        {map === 'MapaEspanya1' &&
-        <SpainMap data={data} reportFound={'reportFound'} />}
-        {map === 'MapaEspanya2' &&
-        <span>Mapa Espanya 2</span>}
-        {map === 'MapaEspanya3' &&
-        <span>Mapa Espanya 3</span>}
+        <SpainMap data={data} selected={map} reportFound={'reportFound'} />
       </div>
     );
   }
