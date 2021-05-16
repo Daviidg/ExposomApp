@@ -9,11 +9,11 @@ import useHasMounted from '../hooks/useHasMounted'
 //import NumberPercentage from './NumberPercentage'
 import styles from '../style/maps.css'
 import communidadesMap from '../assets/maps/ca.json'
-import provincesMap from '../assets/maps/provinces.json'
-//import municipalitiesMap from '../assets/maps/municipalities.json'
+//import provincesMap from '../assets/maps/provinces.json'
+import provincesMap from '../assets/maps/provinces2.json'
+import municipalitiesMap from '../assets/maps/municipalities2.json'
 import canaryIslandsMap from '../assets/maps/canaryIslands.json'
 //import NumberDigits from './NumberDigits'
-//import { getPartialVacunationPopulation, getCompleteVacunationPopulation } from 'services/getProgressCalculations'
 
 const projection = geoConicConformalSpain()
 
@@ -31,14 +31,16 @@ const SpainMap = ({ data, reportFound }) => {
   useEffect(() => {
     //const spainFeatures = feature(provincesMap, provincesMap.objects.provinces).features
     //const spainFeatures = municipalitiesMap.features
-    const spainFeatures = feature(communidadesMap, communidadesMap.objects.ESP_adm1).features
+    const spainFeatures = feature(municipalitiesMap, municipalitiesMap.objects.municipios).features
+    //const spainFeatures = feature(communidadesMap, communidadesMap.objects.ESP_adm1).features
+    //const spainFeatures = provincesMap.features
     const canaryIslandsFeatures = feature(canaryIslandsMap, canaryIslandsMap.objects.ESP_adm2).features
     const object = [...spainFeatures, ...canaryIslandsFeatures]
     const values = data
     console.log("VALUES:", values)
     object.forEach((element) => {
       values.map((el) => {
-        if (el.Parametro === element.properties.NAME || el.Parametro === element.properties.NAME_1) {
+        if (el.Parametro === element.properties.NAME || el.Parametro === element.properties.NAME_1 || el.Parametro === element.properties.provincia) {
           Object.assign(element.properties, el)
         }
         return true
@@ -57,6 +59,10 @@ const SpainMap = ({ data, reportFound }) => {
         return colorList[i]
       }
     }
+  }
+
+  const handleClick = (evt) => {
+    console.log(evt)
   }
 
   const tooltipText = ({
@@ -106,8 +112,9 @@ const SpainMap = ({ data, reportFound }) => {
               key={`path-${i}`}
               onMouseEnter={() => setContent(tooltipText(d.properties))}
               onMouseLeave={() => setContent('')}
+              onClick={(evt) => handleClick(evt)}
               stroke='#FFFFFF'
-              strokeWidth={0.5}
+              strokeWidth={0}
             />
           ))}
           <foreignObject width="100" height="200" x="700" y="320">
