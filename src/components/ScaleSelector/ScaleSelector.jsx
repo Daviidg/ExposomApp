@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { withTranslation } from 'react-i18next';
 
-const options = ["municipal", "provincial", "comunitat"]
+import './../Selector/Selector.css';
+
+const options = ["Municipio", "Provincia", "Comunidad Autónoma"]
 
 class ScaleSelector extends Component {
   constructor() {
@@ -16,23 +18,25 @@ class ScaleSelector extends Component {
   render() {
     const { selectedOption } = this.props;
     return(
-      <div>
-        <h3>{this.props.t('exposome_list')}</h3>
+      <div className="list-style">
+        <h2>{this.props.t('data_detail')}</h2>
         <div onChange={this.onChangeValue}>
         {options.map((opt) => {
           return (
             <div className="radio">
-            <label>
-              <input
-                type="radio"
-                value={opt}
-                checked={selectedOption === opt}
-                onChange={this.onValueChange}
-              />
-            {this.props.t(opt)}
-            </label>
+              <label className="container-radio">
+                <input
+                  type="radio"
+                  value={opt}
+                  checked={selectedOption === opt}
+                  onChange={this.onValueChange}
+                />
+              <span class="checkmark"></span>
+              {this.props.t(opt)}
+              </label>
           </div>
-        )})}
+          )
+        })}
 
       </div>
       </div>

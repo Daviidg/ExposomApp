@@ -29,8 +29,7 @@ const SpainMap = ({ data, selected, scale }) => {
   console.log("SCALE", scale)
   var spainFeatures;
   var object;
-  if (scale === 'municipal') {
-    console.log("MUNICIPI")
+  if (scale === 'Municipio') {
     spainFeatures = feature(municipalitiesMap, municipalitiesMap.objects.municipios).features
     object = [...spainFeatures]
     object.forEach((element) => {
@@ -39,8 +38,8 @@ const SpainMap = ({ data, selected, scale }) => {
         Object.assign(element.properties, el)
       }
       return true})})
-  } 
-  else if (scale === 'provincial') {
+  }
+  else if (scale === 'Provincia') {
     spainFeatures = provincesMap.features
     object = [...spainFeatures]
     object.forEach((element) => {
@@ -59,7 +58,7 @@ const SpainMap = ({ data, selected, scale }) => {
         if (el.Name === element.properties.NAME || el.Name === element.properties.NAME_1) {
           Object.assign(element.properties, el)
         }
-        return true})})  
+        return true})})
   }
 
   const geoFile = object
@@ -81,7 +80,7 @@ const SpainMap = ({ data, selected, scale }) => {
     console.log(evt)
   }
 
-  const tooltipText = (t) => {    
+  const tooltipText = (t) => {
     return (
       <div className={'tooltip'}>
         <p>{t.Provincia}</p>

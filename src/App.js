@@ -12,13 +12,14 @@ import Footer from './components/Footer/Footer.jsx';
 import Logo from './assets/images/logo.png';
 import Banner from './assets/images/banner-bg.jpg';
 
-const dataDict = {'provincial': dataProvincial, 'municipal': dataMunicipal, 'comunitat': dataComunitat}
+const dataDict = {'Provincia': dataProvincial, 'Municipio': dataMunicipal, 'Comunidad Autónoma': dataComunitat}
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
       display: "Radon",
-      scale: "provincial",
+      scale: "Provincia",
       data: dataProvincial,
       headers: Object.keys(dataProvincial[0]).slice(3)
     }

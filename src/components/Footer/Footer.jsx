@@ -11,25 +11,25 @@ class Footer extends Component {
             <div className="footer-col-wrapper">
               <div className="footer-col">
                 <h4>Sobre ExposomApp</h4>
-                <p> Som una grup d'estudiants que ha desenvolupat una eina de convergència i representació de dades de diferents orígens en el camp de l'exposoma</p>
+                <p> Somos un grupo de estudiantes que ha desarrollado una herramienta de convergencia y representación de datos de diferentes orígenes en el campo del exposoma</p>
               </div>
             </div>
             <div className="footer-col-wrapper">
               <div className="footer-col">
-                <h4>Links Importants</h4>
+                <h4>Links Importantes</h4>
                 <ul className="list-footer">
                   <li>
-                    Repte proposat per <a href="https://www.clinicbarcelona.org/en/professionals/laura-mezquita">Laura Mezquita </a>
+                    Reto propuesto por <a href="https://www.clinicbarcelona.org/en/professionals/laura-mezquita">Laura Mezquita </a>
                   </li>
                   <li>
-                    Eina pensada per facilitar el treball i la investigació de l'exposoma en el projecte <a href="https://www.clinicbarcelona.org/en/idibaps/research-areas/oncology-and-haematology/translational-genomics-and-targeted-therapies-in-solid-tumours/projects"> Translational Genomics</a>
+                    Herramienta diseñada per facilitar el trabajo y la investigación del exposoma en el proyecto <a href="https://www.clinicbarcelona.org/en/idibaps/research-areas/oncology-and-haematology/translational-genomics-and-targeted-therapies-in-solid-tumours/projects"> Translational Genomics</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="footer-col-wrapper">
               <div className="footer-col">
-                <h4>Social Media</h4>
+                <h4>Redes Sociales</h4>
                 <div className="social-icons">
                   <li>
                     <SocialIcon network="facebook" bgColor="white"/>

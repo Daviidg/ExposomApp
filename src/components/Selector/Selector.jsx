@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withTranslation } from 'react-i18next';
 
-//import './Selector.css';
+import './Selector.css';
 
 class Selector extends Component {
   constructor() {
@@ -11,30 +11,31 @@ class Selector extends Component {
   }
 
   onChangeValue(event) {
-    console.log(event.target.value)
     this.props.changeValue(event.target.value);
   }
 
   render() {
     const { selectedOption, headers } = this.props;
     return(
-      <div>
-        <h3>{this.props.t('exposome_list')}</h3>
+      <div className="list-style">
+        <h2>{this.props.t('exposome_list')}</h2>
         <div onChange={this.onChangeValue}>
         {headers.map((opt) => {
           return (
             <div className="radio">
-            <label>
-              <input
-                type="radio"
-                value={opt}
-                checked={selectedOption === opt}
-                onChange={this.onValueChange}
-              />
-            {this.props.t(opt)}
-            </label>
-          </div>
-        )})}
+              <label className="container-radio">
+                <input
+                  type="radio"
+                  value={opt}
+                  checked={selectedOption === opt}
+                  onChange={this.onValueChange}
+                />
+              <span class="checkmark"></span>
+              {this.props.t(opt)}
+              </label>
+            </div>
+          )
+        })}
 
       </div>
       </div>
