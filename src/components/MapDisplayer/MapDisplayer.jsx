@@ -9,10 +9,10 @@ class MapDisplayer extends Component {
   }
 
   render() {
-    const { map, data, headers } = this.props;
+    const { map, data, scale } = this.props;
     return(
       <div>
-        <SpainMap data={data} selected={map} reportFound={'reportFound'} />
+        <SpainMap data={data} selected={map} scale={scale} reportFound={'reportFound'} />
       </div>
     );
   }

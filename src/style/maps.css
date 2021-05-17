@@ -38,6 +38,16 @@
     margin-right: 5px;
 }
 
+.map-region {
+    stroke:'#FFFFFF';
+    stroke-width: 0.5;
+}
+
+.map-region:hover {
+    stroke: red;
+    stroke-width: 2
+}
+
 .__react_component_tooltip.place-bottom::after,
 .__react_component_tooltip.place-top::after,
 .__react_component_tooltip.place-left::after,
