@@ -12,25 +12,43 @@
   opacity: 60%;
 }
 .navbar-logo {
-  position: fixed;
+  position: relative;
   width: 200px;
 	height: auto;
-  top: 25px;
-  left: 30px;
+  top: 20px;
+  left: 60px;
 }
 .scroll-wrapper {
   position:absolute;
   width: 100%;
-
+}
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+}
+.selector-wrapper {
+  flex: 0 0 30%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  -moz-box-shadow:    inset 0 0 15px #000000;
+  -webkit-box-shadow: inset 0 0 15px #000000;
+  box-shadow:         inset 0 0 15px #000000;
+}
+.map-selector {
+  margin: 30px;
 }
 .map-wrapper {
-  width: 70%;
-  height: auto;
-  margin-top: 100px;
-  margin-left: 25%;
+  flex: 0 0 65%;
   background-color: azure;
   border-radius: 10px;
-  box-shadow: 5px 5px #708090;
+  -moz-box-shadow:    inset 0 0 15px #000000;
+  -webkit-box-shadow: inset 0 0 15px #000000;
+  box-shadow:         inset 0 0 15px #000000;
 }
 .map-container {
   width: auto;

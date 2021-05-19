@@ -1,80 +1,78 @@
-import { useState, useEffect, useRef } from 'react'
 import { feature } from 'topojson-client'
 import { geoPath } from 'd3-geo'
+import React from 'react'
 import { geoConicConformalSpain } from 'd3-composite-projections'
-import ReactTooltip from 'react-tooltip'
-import useHasMounted from '../hooks/useHasMounted'
-//import { useTranslate } from './hooks/useTranslate'
 
-//import NumberPercentage from './NumberPercentage'
 import styles from '../style/maps.css'
+import '../style/maps.css'
 import communidadesMap from '../assets/maps/ca.json'
-import provincesMap from '../assets/maps/provinces.json'
-//import municipalitiesMap from '../assets/maps/municipalities.json'
+import provincesMap from '../assets/maps/provinces2.json'
+import municipalitiesMap from '../assets/maps/municipalities2.json'
 import canaryIslandsMap from '../assets/maps/canaryIslands.json'
+import { ReactSVGPanZoom, UncontrolledReactSVGPanZoom } from 'react-svg-pan-zoom'
 //import NumberDigits from './NumberDigits'
-//import { getPartialVacunationPopulation, getCompleteVacunationPopulation } from 'services/getProgressCalculations'
 
 const projection = geoConicConformalSpain()
 
-const SpainMap = ({ data, reportFound }) => {
-  const [geoFile, setGeoFile] = useState([])
-  const [content, setContent] = useState('')
-  const [maxValue] = useState(Math.max.apply(Math, data.map(function(o) { return o.Valor; })))
-  const [minValue] = useState(Math.min.apply(Math, data.map(function(o) { return o.Valor; })))
-  const [colorList, setColorList] = useState(['#00414D', '#00778C', '#0097B3', '#00ADCC', '#00B8D9'])
-  const [colorsNumber, setColorNumber] = useState(Math.min(5,colorList.length))
+const SpainMap = React.memo((props) => {
+  const { data, selected, scale, updateTooltip } = props
+  const colorList = ['#02124C', '#003396', '#3373C4', '#73B9EE', '#86CEFA']
+  const colorsNumber = Math.min(5,colorList.length)
+  const maxValue = Math.max.apply(Math, data.map(k => k[selected]))
+  const minValue = Math.min.apply(Math, data.map(k => k[selected]))
 
-  //const translate = useTranslate()
-  const hasMounted = useHasMounted()
-
-  useEffect(() => {
-    //const spainFeatures = feature(provincesMap, provincesMap.objects.provinces).features
-    //const spainFeatures = municipalitiesMap.features
-    const spainFeatures = feature(communidadesMap, communidadesMap.objects.ESP_adm1).features
-    const canaryIslandsFeatures = feature(canaryIslandsMap, canaryIslandsMap.objects.ESP_adm2).features
-    const object = [...spainFeatures, ...canaryIslandsFeatures]
-    const values = data
-    console.log("VALUES:", values)
+  console.log("SCALE", scale)
+  var spainFeatures;
+  var object;
+  if (scale === 'Municipio') {
+    spainFeatures = feature(municipalitiesMap, municipalitiesMap.objects.municipios).features
+    object = [...spainFeatures]
     object.forEach((element) => {
-      values.map((el) => {
-        if (el.Parametro === element.properties.NAME || el.Parametro === element.properties.NAME_1) {
+    data.map((el) => {
+      if (el.Municipi === element.properties.name) {
+        Object.assign(element.properties, el)
+      }
+      return true})})
+  }
+  else if (scale === 'Provincia') {
+    spainFeatures = provincesMap.features
+    object = [...spainFeatures]
+    object.forEach((element) => {
+    data.map((el) => {
+      if (el.Codigo === element.properties.codigo) {
+        Object.assign(element.properties, el)
+      }
+      return true})})
+
+  } else {
+    spainFeatures = feature(communidadesMap, communidadesMap.objects.ESP_adm1).features
+    const canaryIslandsFeatures = feature(canaryIslandsMap, canaryIslandsMap.objects.ESP_adm2).features
+    object = [...spainFeatures, ...canaryIslandsFeatures]
+    object.forEach((element) => {
+      data.map((el) => {
+        if (el.Name === element.properties.NAME || el.Name === element.properties.NAME_1) {
           Object.assign(element.properties, el)
         }
-        return true
-      })
-    })
-    console.log("OBJECT:", object)
-    setGeoFile(object)
-  }, [reportFound])
+        return true})})
+  }
 
-
+  const geoFile = object
 
   const coloringMap = (porcentaje) => {
     const k = (maxValue-minValue)/colorsNumber;
     for (var i=0; i < colorsNumber; i++) {
-      if (porcentaje > maxValue-k*(i+1)) {
+      if (porcentaje >= maxValue-k*(i+1)) {
         return colorList[i]
       }
     }
+    if (porcentaje >= minValue) {
+      return colorList[colorList.length-1]
+    }
+    return "#bdc3c7"
   }
 
-  const tooltipText = ({
-    Valor,
-    Parametro,
-    Agno
-  }) => {
-    return (
-      <div className={styles.tooltip}>
-        <p>{Parametro}</p>
-        <p className={styles.tooltipSubText}>
-          {Agno}
-        </p>
-        <p className={styles.tooltipSubText}>
-          {Valor}
-        </p>
-      </div>
-    )
+  const handleClick = (evt) => {
+    console.log(evt)
   }
 
   const CanaryIslandsContainer = ({ closed }) => {
@@ -95,27 +93,29 @@ const SpainMap = ({ data, reportFound }) => {
 
   return (
     <div className={`mapa ${styles.container}`} data-tip='' data-for='toolitpMap'>
-      <svg className={styles.mapa} viewBox='100 0 800 520'>
+      {console.log("RENDERING")}
+      <UncontrolledReactSVGPanZoom width={960} height={520} background='#FFFFFF'>
+      <svg className={styles.mapa} viewBox='100 0 730 520'>
         <g className='ESP_adm1'>
-          <CanaryIslandsContainer closed={true} />
-          {geoFile.map((d, i) => (
-            <path
-              className={`${styles.enabled}`}
+          <CanaryIslandsContainer closed={false} />
+          {geoFile.map((d, i) => {
+            return <path
+              className={`map-region`}
               d={geoPath().projection(projection)(d)}
-              fill={coloringMap(d.properties.Valor)}
+              fill={coloringMap(d.properties[selected])}
               key={`path-${i}`}
-              onMouseEnter={() => setContent(tooltipText(d.properties))}
-              onMouseLeave={() => setContent('')}
-              stroke='#FFFFFF'
-              strokeWidth={0.5}
+              onMouseEnter={() => updateTooltip(d.properties)}
+              onMouseLeave={() => updateTooltip('')}
+              onClick={(evt) => handleClick(evt)}
             />
-          ))}
-          <foreignObject width="100" height="200" x="700" y="320">
+          })}
+          
+          <foreignObject width="100" height="200" x="680" y="390">
             <div>
-            {colorList.map((d,i) => {
+            {colorList.slice(0, selected === 'Radon' ? 3 : 5).map((d,i) => {
               return <div key={`leg-${i}`} className={'legend-box'}>
                 <div className={'legend-color'} style={{backgroundColor: d}}></div>
-                <p className={'legend-numbers'}>{`${Math.round(maxValue-(i)*(maxValue-minValue)/colorsNumber)}-${Math.round(maxValue-(i+1)*(maxValue-minValue)/colorsNumber)}`}
+                <p className={'legend-numbers'}>{`${Math.round((maxValue-(i)*(maxValue-minValue)/colorsNumber) * 100) / 100}-${Math.round((maxValue-(i+1)*(maxValue-minValue)/colorsNumber) * 100) / 100}`}
                 </p>
               </div>
              })}
@@ -123,10 +123,10 @@ const SpainMap = ({ data, reportFound }) => {
           </foreignObject>
         </g>
       </svg>
-      {hasMounted && <ReactTooltip id='toolitpMap'>{content}</ReactTooltip>}
+      </UncontrolledReactSVGPanZoom>
     </div>
   )
-}
+})
 
 
 export default SpainMap
