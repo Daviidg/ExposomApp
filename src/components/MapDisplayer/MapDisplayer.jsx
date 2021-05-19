@@ -14,7 +14,7 @@ class MapDisplayer extends Component {
   updatetooltipText = (t) => {
     var tooltip = ''
     if (t !== '') {
-      tooltip = 
+      tooltip =
         <div className={'tooltip'}>
           <p>{this.props.scale === 'Provincia' ? t.Provincia : (this.props.scale === 'Municipio' ? t.Municipi : t.Name) }</p>
           <p className={styles.tooltipSubText}>
@@ -29,8 +29,8 @@ class MapDisplayer extends Component {
   render() {
     const { map, data, scale } = this.props;
     return(
-      <div>
-        <SpainMap data={data} selected={map} scale={scale} updateTooltip={this.updatetooltipText}/> 
+      <div className='map-displayer'>
+        <SpainMap data={data} selected={map} scale={scale} updateTooltip={this.updatetooltipText}/>
         <ReactTooltip id='toolitpMap'>{this.state.content}</ReactTooltip>
       </div>
     );

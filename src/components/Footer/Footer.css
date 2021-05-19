@@ -1,6 +1,6 @@
 .footer-wrapper {
   margin-top: 50px;
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 0.5rem;
   background-color: #262431;
 }
@@ -85,7 +85,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   padding-bottom: 0.5rem;
   color: #f1f1f8;
   font: 400 0.75rem/1.25rem "Open Sans", sans-serif;

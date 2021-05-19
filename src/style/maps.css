@@ -1,5 +1,5 @@
 .container {
-    max-width: 100vw;
+    max-width: 100%;
     padding-right: 16px;
     width: 1000px;
 }
@@ -27,7 +27,7 @@
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  
+
 }
 
 .legend-color {
@@ -53,4 +53,19 @@
 .__react_component_tooltip.place-left::after,
 .__react_component_tooltip.place-right::after {
     border: 1px solid transparent;
+}
+
+.map-displayer {
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+
+.spain-map {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

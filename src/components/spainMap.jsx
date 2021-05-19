@@ -92,10 +92,10 @@ const SpainMap = React.memo((props) => {
   }
 
   return (
-    <div className={`mapa ${styles.container}`} data-tip='' data-for='toolitpMap'>
+    <div className='spain-map' data-tip='' data-for='toolitpMap'>
       {console.log("RENDERING")}
-      <UncontrolledReactSVGPanZoom width={960} height={520} background='#FFFFFF'>
-      <svg className={styles.mapa} viewBox='100 0 730 520'>
+        <UncontrolledReactSVGPanZoom width={1180} height={760} background='#FFFFFF'>
+      <svg className={styles.mapa} viewBox='100 50 730 520'>
         <g className='ESP_adm1'>
           <CanaryIslandsContainer closed={false} />
           {geoFile.map((d, i) => {
@@ -109,7 +109,7 @@ const SpainMap = React.memo((props) => {
               onClick={(evt) => handleClick(evt)}
             />
           })}
-          
+
           <foreignObject width="100" height="200" x="680" y="390">
             <div>
             {colorList.slice(0, selected === 'Radon' ? 3 : 5).map((d,i) => {
