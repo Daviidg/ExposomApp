@@ -1,26 +1,21 @@
-import { useState } from 'react'
 import { feature } from 'topojson-client'
 import { geoPath } from 'd3-geo'
+import React from 'react'
 import { geoConicConformalSpain } from 'd3-composite-projections'
-import ReactTooltip from 'react-tooltip'
-import useHasMounted from '../hooks/useHasMounted'
 
-//import NumberPercentage from './NumberPercentage'
 import styles from '../style/maps.css'
 import '../style/maps.css'
 import communidadesMap from '../assets/maps/ca.json'
-//import provincesMap from '../assets/maps/provinces.json'
 import provincesMap from '../assets/maps/provinces2.json'
 import municipalitiesMap from '../assets/maps/municipalities2.json'
 import canaryIslandsMap from '../assets/maps/canaryIslands.json'
+import { ReactSVGPanZoom, UncontrolledReactSVGPanZoom } from 'react-svg-pan-zoom'
 //import NumberDigits from './NumberDigits'
 
 const projection = geoConicConformalSpain()
 
-const SpainMap = ({ data, selected, scale }) => {
-  const [content, setContent] = useState('')
-  const hasMounted = useHasMounted()
-
+const SpainMap = React.memo((props) => {
+  const { data, selected, scale, updateTooltip } = props
   const colorList = ['#02124C', '#003396', '#3373C4', '#73B9EE', '#86CEFA']
   const colorsNumber = Math.min(5,colorList.length)
   const maxValue = Math.max.apply(Math, data.map(k => k[selected]))
@@ -80,17 +75,6 @@ const SpainMap = ({ data, selected, scale }) => {
     console.log(evt)
   }
 
-  const tooltipText = (t) => {
-    return (
-      <div className={'tooltip'}>
-        <p>{t.Provincia}</p>
-        <p className={styles.tooltipSubText}>
-          {t[selected]}
-        </p>
-      </div>
-    )
-  }
-
   const CanaryIslandsContainer = ({ closed }) => {
     const openContainerSVGPath = 'M 120,375 L 370,375 L 400,400 L 400, 510'
     const closedContainerSVGPath = 'M 120,375 L 370,375 L 400,400 L 400, 510 L 120,510 Z'
@@ -110,6 +94,7 @@ const SpainMap = ({ data, selected, scale }) => {
   return (
     <div className={`mapa ${styles.container}`} data-tip='' data-for='toolitpMap'>
       {console.log("RENDERING")}
+      <UncontrolledReactSVGPanZoom width={960} height={520} background='#FFFFFF'>
       <svg className={styles.mapa} viewBox='100 0 730 520'>
         <g className='ESP_adm1'>
           <CanaryIslandsContainer closed={false} />
@@ -119,17 +104,18 @@ const SpainMap = ({ data, selected, scale }) => {
               d={geoPath().projection(projection)(d)}
               fill={coloringMap(d.properties[selected])}
               key={`path-${i}`}
-              onMouseEnter={() => setContent(tooltipText(d.properties))}
-              onMouseLeave={() => setContent('')}
+              onMouseEnter={() => updateTooltip(d.properties)}
+              onMouseLeave={() => updateTooltip('')}
               onClick={(evt) => handleClick(evt)}
             />
           })}
+          
           <foreignObject width="100" height="200" x="680" y="390">
             <div>
-            {colorList.map((d,i) => {
+            {colorList.slice(0, selected === 'Radon' ? 3 : 5).map((d,i) => {
               return <div key={`leg-${i}`} className={'legend-box'}>
                 <div className={'legend-color'} style={{backgroundColor: d}}></div>
-                <p className={'legend-numbers'}>{`${maxValue-(i)*(maxValue-minValue)/colorsNumber}-${maxValue-(i+1)*(maxValue-minValue)/colorsNumber}`}
+                <p className={'legend-numbers'}>{`${Math.round((maxValue-(i)*(maxValue-minValue)/colorsNumber) * 100) / 100}-${Math.round((maxValue-(i+1)*(maxValue-minValue)/colorsNumber) * 100) / 100}`}
                 </p>
               </div>
              })}
@@ -137,10 +123,10 @@ const SpainMap = ({ data, selected, scale }) => {
           </foreignObject>
         </g>
       </svg>
-      {hasMounted && <ReactTooltip id='toolitpMap'>{content}</ReactTooltip>}
+      </UncontrolledReactSVGPanZoom>
     </div>
   )
-}
+})
 
 
 export default SpainMap

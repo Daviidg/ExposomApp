@@ -9,7 +9,7 @@
       "Defunciones CP M": 8,
       "Defunciones CP H": 35,
       "Arsènic": 0,
-      "Radó": 1
+      "Radon": 1
     },
     {
       "Name": "Aragón",
@@ -21,7 +21,7 @@
       "Defunciones CP M": 10,
       "Defunciones CP H": 41,
       "Arsènic": 0,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Asturias, Principado de",
@@ -33,7 +33,7 @@
       "Defunciones CP M": 19,
       "Defunciones CP H": 56,
       "Arsènic": 0,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Balears, Illes",
@@ -45,7 +45,7 @@
       "Defunciones CP M": 10,
       "Defunciones CP H": 30,
       "Arsènic": 0,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Canarias",
@@ -57,7 +57,7 @@
       "Defunciones CP M": 13,
       "Defunciones CP H": 30,
       "Arsènic": 0,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Cantabria",
@@ -69,7 +69,7 @@
       "Defunciones CP M": 18,
       "Defunciones CP H": 45,
       "Arsènic": 0,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Castilla y León",
@@ -81,7 +81,7 @@
       "Defunciones CP M": 12,
       "Defunciones CP H": 44,
       "Arsènic": 0.6,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Castilla-La Mancha",
@@ -93,7 +93,7 @@
       "Defunciones CP M": 7,
       "Defunciones CP H": 39,
       "Arsènic": 0.3,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Cataluña",
@@ -105,7 +105,7 @@
       "Defunciones CP M": 10,
       "Defunciones CP H": 35,
       "Arsènic": 1,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Comunidad Valenciana",
@@ -117,7 +117,7 @@
       "Defunciones CP M": 11,
       "Defunciones CP H": 36,
       "Arsènic": 0.7,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Extremadura",
@@ -129,7 +129,7 @@
       "Defunciones CP M": 8,
       "Defunciones CP H": 49,
       "Arsènic": 0.4,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Galicia",
@@ -141,7 +141,7 @@
       "Defunciones CP M": 13,
       "Defunciones CP H": 45,
       "Arsènic": 1.8,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Madrid",
@@ -153,7 +153,7 @@
       "Defunciones CP M": 10,
       "Defunciones CP H": 28,
       "Arsènic": 0.9,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Murcia",
@@ -165,7 +165,7 @@
       "Defunciones CP M": 6,
       "Defunciones CP H": 32,
       "Arsènic": 0,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Navarra, Comunidad Foral de",
@@ -177,7 +177,7 @@
       "Defunciones CP M": 14,
       "Defunciones CP H": 38,
       "Arsènic": 0.2,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "País Vasco",
@@ -189,7 +189,7 @@
       "Defunciones CP M": 13,
       "Defunciones CP H": 41,
       "Arsènic": 0.5,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Rioja, La",
@@ -201,7 +201,7 @@
       "Defunciones CP M": 13,
       "Defunciones CP H": 38,
       "Arsènic": 0.3,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Ceuta",
@@ -213,7 +213,7 @@
       "Defunciones CP M": 5,
       "Defunciones CP H": 21,
       "Arsènic": 0,
-      "Radó": 0
+      "Radon": 0
     },
     {
       "Name": "Melilla",
@@ -225,6 +225,6 @@
       "Defunciones CP M": 13,
       "Defunciones CP H": 30,
       "Arsènic": 0,
-      "Radó": 0
+      "Radon": 0
     }
   ]
