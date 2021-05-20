@@ -16,7 +16,7 @@ class MapDisplayer extends Component {
     if (t !== '') {
       tooltip =
         <div className={'tooltip'}>
-          <p>{this.props.scale === 'Provincia' ? t.Provincia : (this.props.scale === 'Municipio' ? t.Municipi : t.Name) }</p>
+          <p>{this.props.scale === 'Provincia' ? t.Provincia : (this.props.scale === 'Municipio' ? t.Municipio : t.Comunidad) }</p>
           <p className={styles.tooltipSubText}>
             {t[this.props.map]}
           </p>
