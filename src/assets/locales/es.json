@@ -1,6 +1,6 @@
 {
     "title": "ExposomeApp",
-    "exposome_list": "Lista de exposomas:",
+    "exposome_list": "Datos:",
     "data_detail": "Nivel de detalle:",
     "Radon": "Radón",
     "Arsenico": "Arsénico(ng/m3)"
