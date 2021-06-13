@@ -56,6 +56,7 @@ class App extends Component {
                     headers = {headers}
                     />
                   <Selector
+                    scaleSelected={scale}
                     selectedOption={display}
                     changeValue={this.selectorValueChange.bind(this)}
                     headers = {headers}

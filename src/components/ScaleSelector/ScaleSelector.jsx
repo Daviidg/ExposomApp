@@ -20,25 +20,17 @@ class ScaleSelector extends Component {
     return(
       <div className="list-style">
         <h2>{this.props.t('data_detail')}</h2>
-        <div onChange={this.onChangeValue}>
-        {options.map((opt) => {
-          return (
-            <div className="radio">
-              <label className="container-radio">
-                <input
-                  type="radio"
-                  value={opt}
-                  checked={selectedOption === opt}
-                  onChange={this.onValueChange}
-                />
-              <span class="checkmark"></span>
-              {this.props.t(opt)}
-              </label>
-          </div>
-          )
-        })}
-
-      </div>
+          <select className={"select"} onChange={this.onChangeValue} defaultValue={selectedOption}>
+          {options.map((opt, index) => {
+            return (
+              <option
+                value={opt}
+                key={index}
+                > {opt}
+              </option>
+            )
+          })}
+        </select>
       </div>
     );
   }

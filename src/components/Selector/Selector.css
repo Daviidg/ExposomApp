@@ -8,6 +8,25 @@
   src: local('TeXGyreBonum Regular'), url(./../../assets/fonts/texgyrebonum-regular.otf) format('opentype');
 }
 
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  font-family: "TeXGyreBonum Regular", sans-serif;
+  color: #000;
+  width: 250px;
+  height: 40px;
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+select:hover {
+    background-color: #E5E7E9;
+}
+
+
 .list-style {
   margin-bottom: 30px;
 }
@@ -145,4 +164,8 @@
 
 .select-items div:hover, .same-as-selected {
   background-color: midnightblue;
+}
+
+#separator {
+  margin-bottom: 30px;
 }

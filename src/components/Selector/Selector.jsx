@@ -15,22 +15,27 @@ class Selector extends Component {
   }
 
   render() {
-    const { selectedOption, headers } = this.props;
+    const { scaleSelected, selectedOption, headers } = this.props;
+    let separatorElement = null;
+    if(scaleSelected === 'Municipio') separatorElement = 1;
+    else if(scaleSelected === 'Provincia') separatorElement = 1;
+    else if(scaleSelected === 'Comunidad Autónoma') separatorElement = 4;
+    console.log('scaleSelected = ', scaleSelected);
     return(
       <div className="list-style">
         <h2>{this.props.t('exposome_list')}</h2>
-        <div onChange={this.onChangeValue}>
-        {headers.map((opt) => {
+        <div>
+        {headers.map((opt, index) => {
           return (
-            <div className="radio">
-              <label className="container-radio">
+            <div className="radio" key={index}>
+              <label className="container-radio" id={ separatorElement && index === separatorElement ? "separator" : "" }>
                 <input
                   type="radio"
                   value={opt}
                   checked={selectedOption === opt}
-                  onChange={this.onValueChange}
+                  onChange={this.onChangeValue}
                 />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
               {this.props.t(opt)}
               </label>
             </div>

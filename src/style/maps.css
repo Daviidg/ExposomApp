@@ -4,6 +4,13 @@
     width: 1000px;
 }
 
+.mapa {
+  border-radius: 10px;
+  -moz-box-shadow:    inset 0 0 15px #000000;
+  -webkit-box-shadow: inset 0 0 15px #000000;
+  box-shadow:         inset 0 0 15px #000000;
+}
+
 .mapa g {
     cursor: pointer;
 }
@@ -21,13 +28,8 @@
 }
 
 .legend-numbers {
-    font-size: 8px;
-    display: inline-block;
-    margin: 0;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
+    font-size: 12px;
+    margin: 8px;
 }
 
 .legend-color {
@@ -35,7 +37,12 @@
     width: 10px;
     height: 10px;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 0px;
+}
+
+.legend-box {
+  display: flex;
+  align-items: center;
 }
 
 .map-region {
@@ -62,10 +69,6 @@
 }
 
 .spain-map {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 }
