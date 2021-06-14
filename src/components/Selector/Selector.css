@@ -15,7 +15,7 @@
   font-size: 18px;
   font-family: "TeXGyreBonum Regular", sans-serif;
   color: #000;
-  width: 250px;
+  width: 270px;
   height: 40px;
   background-color: #fff;
   padding: 8px 15px;
@@ -34,6 +34,11 @@ select:hover {
 .list-style h2 {
   font-family: "TeXGyreBonum Regular", sans-serif;
   margin-bottom: 10px;
+}
+
+.list-style h3 {
+  font-family: "TeXGyreBonum Regular", sans-serif;
+  margin-top: 20px;
 }
 
 .list-style label {

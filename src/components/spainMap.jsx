@@ -93,9 +93,9 @@ const SpainMap = React.memo((props) => {
   return (
     <div className='spain-map' data-tip='' data-for='toolitpMap'>
       {console.log("RENDERING")}
-      <UncontrolledReactSVGPanZoom width={1217} height={981} background='#FFFFFF'>
+      <UncontrolledReactSVGPanZoom width={1217} height={854} background='#FFFFFF'>
         <svg className={styles.mapa} viewBox="0 0 0 0">
-          <g className='ESP_adm1' transform="translate(-40,40), scale(1.45, 1.45)">
+          <g className='ESP_adm1' transform="translate(-40,70), scale(1.45, 1.45)">
             <CanaryIslandsContainer closed={false} />
             {geoFile.map((d, i) => {
               return <path

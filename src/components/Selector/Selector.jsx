@@ -16,33 +16,67 @@ class Selector extends Component {
 
   render() {
     const { scaleSelected, selectedOption, headers } = this.props;
-    let separatorElement = null;
-    if(scaleSelected === 'Municipio') separatorElement = 1;
-    else if(scaleSelected === 'Provincia') separatorElement = 1;
-    else if(scaleSelected === 'Comunidad Autónoma') separatorElement = 4;
+    console.log('headers = ', headers);
+    let carcinogenos = [];
+    let poblacional = [];
+    headers.map((opt, index) => {
+        let list_item = {};
+        if(opt==='Arsenico' || opt==='Radon' || opt==='Lindano' || opt==='Particulas en suspensión 10'){
+          list_item = { name: opt, type: 'Carcinogeno'}
+          carcinogenos.push(list_item);
+        }
+        else {
+          list_item = { name: opt, type: 'Poblacional'};
+          poblacional.push(list_item);
+        }
+      return (carcinogenos, poblacional);
+    });
+    console.log('carcinogenos = ', carcinogenos);
+    console.log('poblacional = ', poblacional);
     console.log('scaleSelected = ', scaleSelected);
     return(
       <div className="list-style">
         <h2>{this.props.t('exposome_list')}</h2>
-        <div>
-        {headers.map((opt, index) => {
-          return (
-            <div className="radio" key={index}>
-              <label className="container-radio" id={ separatorElement && index === separatorElement ? "separator" : "" }>
-                <input
-                  type="radio"
-                  value={opt}
-                  checked={selectedOption === opt}
-                  onChange={this.onChangeValue}
-                />
-              <span className="checkmark"></span>
-              {this.props.t(opt)}
-              </label>
-            </div>
-          )
-        })}
 
-      </div>
+        <h3>{this.props.t('Poblacional')}</h3>
+        <div className="list-poblacional">
+          {poblacional.map((opt, index) => {
+            return (
+              <div className="" key={index}>
+                <label className="container">
+                  <input
+                    type="checkbox"
+                    value={opt.name}
+                    checked={selectedOption === opt.name}
+                    onChange={this.onChangeValue}
+                  />
+                <span className="checkmark"></span>
+                {this.props.t(opt.name)}
+                </label>
+              </div>
+            )
+          })}
+        </div>
+
+        <h3>{this.props.t('Carcinogenos')}</h3>
+        <div className="list-carcinogenos">
+          {carcinogenos.map((opt, index) => {
+            return (
+              <div className="" key={index}>
+                <label className="container">
+                  <input
+                    type="checkbox"
+                    value={opt.name}
+                    checked={selectedOption === opt.name}
+                    onChange={this.onChangeValue}
+                  />
+                <span className="checkmark"></span>
+                {this.props.t(opt.name)}
+                </label>
+              </div>
+            )
+          })}
+        </div>
       </div>
     );
   }
