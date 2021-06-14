@@ -1,6 +1,10 @@
+@font-face {
+  font-family: 'TeXGyreBonum Regular';
+  src: local('TeXGyreBonum Regular'), url(./../../../assets/fonts/texgyrebonum-regular.otf) format('opentype');
+}
+
 .chartContainer {
-  max-width: 1000px;
-  margin-top: 3rem;
+  max-width: 70%;
   width: 100%;
   box-shadow: var(--app-shadow-color) 14px 14px;
   background-image: var(--app-background);
@@ -8,8 +12,8 @@
   background-position: 0 0, 20px 20px;
   border-radius: 8px;
   border: 2px solid var(--app-border-color);
-  margin: 1rem 0 3rem;
-  padding-right: 3rem;
+  margin: auto;
+  align-self: center;
 }
 
 .chartTooltip {
@@ -20,4 +24,19 @@
   border-radius: 8px;
   text-align: center;
   width: 20em;
+}
+
+.topLegend-chart {
+  font-size: 18px !important;
+  font-family: "TeXGyreBonum Regular", sans-serif !important;
+}
+
+.chartContainer span{
+  font-size: 22px !important;
+  font-family: "TeXGyreBonum Regular", sans-serif !important;
+  margin: 10px;
+}
+
+.chartContainer ul{
+  margin-bottom: 20px !important;
 }

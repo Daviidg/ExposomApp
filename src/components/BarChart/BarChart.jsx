@@ -1,4 +1,4 @@
-import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Bar } from 'recharts'
+import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Legend, Bar } from 'recharts'
 //import EtariosToolTip from './tooltips'
 import styles from './styles/EtariosBarChart.module.css'
 import { withTranslation } from 'react-i18next';
@@ -7,13 +7,13 @@ const maxLines = 60
 
 const CustomBarChart = ({ data, selected, scale }) => {
   const dataChart = normalizeBarCharData(data, selected, scale)
-  
+
   if (!dataChart) return <></>
 
   return (
     <>
       <div className={styles.chartContainer}>
-        <div style={{ width: '100%', height: 450 }}>
+        <div style={{ width: '100%', height: 600 }}>
           <ResponsiveContainer>
             <BarChart
               data={dataChart}
@@ -25,10 +25,10 @@ const CustomBarChart = ({ data, selected, scale }) => {
               }}
             >
               <CartesianGrid strokeDasharray='3 3 3' />
-              <XAxis dataKey="name" angle={-45} textAnchor="end" interval={0} fontSize='12' fontWeight='00' stroke='white'/>
-              <YAxis interval='preserveStartEnd' width={50} scale='linear' fontSize='12' fontWeight='700' textAnchor='end' stroke='white'/>
+              <XAxis dataKey="name" angle={-45} textAnchor="end" interval={0} fontSize='18' fontWeight='200' stroke='white'/>
+              <YAxis interval='preserveStartEnd' width={80} scale='linear' fontSize='20' fontWeight='700' textAnchor='end' stroke='white'/>
               {/*<Tooltip content={<EtariosToolTip />} />*/}
-              <Legend verticalAlign='top' />
+              <Legend verticalAlign='top' style={{fontSize: '18px'}}/>
               <Bar dataKey={selected} fill='#6cd0ff'/>
             </BarChart>
           </ResponsiveContainer>
