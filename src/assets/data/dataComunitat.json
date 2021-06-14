@@ -8,7 +8,7 @@
     "No Fumadores M": 63110,
     "Defunciones CP M": 8,
     "Defunciones CP H": 35,
-    "Arsènic": 0,
+    "Arsenico": 0,
     "Radon": 1
   },
   {
@@ -20,7 +20,7 @@
     "No Fumadores M": 60420,
     "Defunciones CP M": 10,
     "Defunciones CP H": 41,
-    "Arsènic": 0,
+    "Arsenico": 0,
     "Radon": 0
   },
   {
@@ -32,7 +32,7 @@
     "No Fumadores M": 61030,
     "Defunciones CP M": 19,
     "Defunciones CP H": 56,
-    "Arsènic": 0,
+    "Arsenico": 0,
     "Radon": 0
   },
   {
@@ -44,7 +44,7 @@
     "No Fumadores M": 63600,
     "Defunciones CP M": 10,
     "Defunciones CP H": 30,
-    "Arsènic": 0,
+    "Arsenico": 0,
     "Radon": 0
   },
   {
@@ -56,7 +56,7 @@
     "No Fumadores M": 64520,
     "Defunciones CP M": 13,
     "Defunciones CP H": 30,
-    "Arsènic": 0,
+    "Arsenico": 0,
     "Radon": 0
   },
   {
@@ -68,7 +68,7 @@
     "No Fumadores M": 62740,
     "Defunciones CP M": 18,
     "Defunciones CP H": 45,
-    "Arsènic": 0,
+    "Arsenico": 0,
     "Radon": 0
   },
   {
@@ -80,7 +80,7 @@
     "No Fumadores M": 63950,
     "Defunciones CP M": 12,
     "Defunciones CP H": 44,
-    "Arsènic": 0.6,
+    "Arsenico": 0.6,
     "Radon": 0
   },
   {
@@ -92,7 +92,7 @@
     "No Fumadores M": 66810,
     "Defunciones CP M": 7,
     "Defunciones CP H": 39,
-    "Arsènic": 0.3,
+    "Arsenico": 0.3,
     "Radon": 0
   },
   {
@@ -104,7 +104,7 @@
     "No Fumadores M": 66440,
     "Defunciones CP M": 10,
     "Defunciones CP H": 35,
-    "Arsènic": 1,
+    "Arsenico": 1,
     "Radon": 0
   },
   {
@@ -116,7 +116,7 @@
     "No Fumadores M": 60520,
     "Defunciones CP M": 11,
     "Defunciones CP H": 36,
-    "Arsènic": 0.7,
+    "Arsenico": 0.7,
     "Radon": 0
   },
   {
@@ -128,7 +128,7 @@
     "No Fumadores M": 67460,
     "Defunciones CP M": 8,
     "Defunciones CP H": 49,
-    "Arsènic": 0.4,
+    "Arsenico": 0.4,
     "Radon": 0
   },
   {
@@ -140,11 +140,11 @@
     "No Fumadores M": 70850,
     "Defunciones CP M": 13,
     "Defunciones CP H": 45,
-    "Arsènic": 1.8,
+    "Arsenico": 1.8,
     "Radon": 0
   },
   {
-    "Comunidad": "Madrid, Comunidad de",
+    "Comunidad": "Madrid",
     "Poblacion": 6747425,
     "Fumadores H": 23970,
     "No fumadores H": 45120,
@@ -152,11 +152,11 @@
     "No Fumadores M": 64180,
     "Defunciones CP M": 10,
     "Defunciones CP H": 28,
-    "Arsènic": 0.9,
+    "Arsenico": 0.9,
     "Radon": 0
   },
   {
-    "Comunidad": "Murcia, Región de",
+    "Comunidad": "Murcia",
     "Poblacion": 1504607,
     "Fumadores H": 30400,
     "No fumadores H": 50670,
@@ -164,7 +164,7 @@
     "No Fumadores M": 71100,
     "Defunciones CP M": 6,
     "Defunciones CP H": 32,
-    "Arsènic": 0,
+    "Arsenico": 0,
     "Radon": 0
   },
   {
@@ -176,7 +176,7 @@
     "No Fumadores M": 68700,
     "Defunciones CP M": 14,
     "Defunciones CP H": 38,
-    "Arsènic": 0.2,
+    "Arsenico": 0.2,
     "Radon": 0
   },
   {
@@ -188,7 +188,7 @@
     "No Fumadores M": 60960,
     "Defunciones CP M": 13,
     "Defunciones CP H": 41,
-    "Arsènic": 0.5,
+    "Arsenico": 0.5,
     "Radon": 0
   },
   {
@@ -200,7 +200,7 @@
     "No Fumadores M": 62920,
     "Defunciones CP M": 13,
     "Defunciones CP H": 38,
-    "Arsènic": 0.3,
+    "Arsenico": 0.3,
     "Radon": 0
   },
   {
@@ -212,7 +212,7 @@
     "No Fumadores M": 72480,
     "Defunciones CP M": 5,
     "Defunciones CP H": 21,
-    "Arsènic": 0,
+    "Arsenico": 0,
     "Radon": 0
   },
   {
@@ -224,7 +224,7 @@
     "No Fumadores M": 88250,
     "Defunciones CP M": 13,
     "Defunciones CP H": 30,
-    "Arsènic": 0,
+    "Arsenico": 0,
     "Radon": 0
   }
 ]

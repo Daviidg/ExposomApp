@@ -21,7 +21,6 @@ const SpainMap = React.memo((props) => {
   const maxValue = Math.max.apply(Math, data.map(k => k[selected]))
   const minValue = Math.min.apply(Math, data.map(k => k[selected]))
 
-  console.log("SCALE", scale)
   var spainFeatures;
   var object;
   if (scale === 'Municipio') {

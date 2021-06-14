@@ -22,7 +22,6 @@ class MapDisplayer extends Component {
           </p>
        </div>
     }
-    console.log("TOOLTIP", t)
     this.setState({content: tooltip})
   }
 

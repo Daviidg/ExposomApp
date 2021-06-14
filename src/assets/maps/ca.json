@@ -19222,11 +19222,6 @@
             "arcs":[
               [
                 [
-                  41
-                ]
-              ],
-              [
-                [
                   42
                 ]
               ]
@@ -19236,8 +19231,29 @@
               "ISO":"ESP",
               "NAME_0":"Spain",
               "ID_1":941,
-              "NAME_1":"Ceuta y Melilla",
-              "NAME":"Ceuta y Melilla",
+              "NAME_1":"Ceuta",
+              "NAME":"Ceuta",
+              "VARNAME_1":"",
+              "HASC_1":"ES.CE",
+              "TYPE_1":"Ciudades Autónomas",
+              "ENGTYPE_1":"Autonomous City"
+            }
+          },
+          {
+            "arcs":[
+              [
+                [
+                  41
+                ]
+              ]
+            ],
+            "type":"MultiPolygon",
+            "properties":{
+              "ISO":"ESP",
+              "NAME_0":"Spain",
+              "ID_1":941,
+              "NAME_1":"Melilla",
+              "NAME":"Melilla",
               "VARNAME_1":"",
               "HASC_1":"ES.CE",
               "TYPE_1":"Ciudades Autónomas",

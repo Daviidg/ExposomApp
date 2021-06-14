@@ -7,6 +7,7 @@ import dataComunitat from './assets/data/dataComunitat.json'
 import Selector from './components/Selector/Selector.jsx';
 import ScaleSelector from './components/ScaleSelector/ScaleSelector.jsx';
 import MapDisplayer from './components/MapDisplayer/MapDisplayer.jsx';
+import CustomBarChart from './components/BarChart/BarChart.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 import Logo from './assets/images/logo.png';
@@ -72,6 +73,13 @@ class App extends Component {
                     />
                 </div>
               </div>
+            </div>
+            <div className="chart-wrapper">
+                <CustomBarChart
+                  data={data} 
+                  selected={display}
+                  scale={scale} 
+                />
             </div>
             <Footer/>
           </div>

@@ -1,7 +1,21 @@
 {
     "title": "ExposomeApp",
-    "exposome_list": "Exposoma:",
     "data_detail": "Nivel de detalle:",
+    "Municipio": "Municipio",
+    "Provincia": "Provincia",
+    "Comunidad": "Comunidad",
+    "exposome_list": "Exposoma:",
     "Radon": "Radón",
-    "Arsenico": "Arsénico(ng/m3)"
+    "Arsenico": "Arsénico (ng/m3)",
+    "Particulas en suspensión 10": "Particulas en suspensión 10 ppm",
+    "Lindano": "Lindano",
+    "Poblacion": "Población",
+    "Fumadores H": "Fumadores H",
+    "No fumadores H": "No fumadores H",
+    "Fumadores M": "Fumadores M",
+    "No Fumadores M": "No fumadores M",
+    "Mortalitat D CP": "Mortalidad Cáncer de pulmón M",
+    "Mortalitat H CP": "Mortalidad Cáncer de pulmón H",
+    "Defunciones CP M": "Mortalidad Cáncer de pulmón M",
+    "Defunciones CP H": "Mortalidad Cáncer de pulmón H"
 }

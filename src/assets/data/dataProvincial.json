@@ -1,7 +1,7 @@
 [
   {
     "Codigo": "01",
-    "Provincia": "Araba/Álava",
+    "Provincia": "Álava",
     "Comunidad": "País Vasco",
     "Numero Defunciones CP M": 32,
     "Numero Defunciones CP H": 116,
@@ -29,7 +29,7 @@
   },
   {
     "Codigo": "03",
-    "Provincia": "Alicante/Alacant",
+    "Provincia": "Alicante",
     "Comunidad": "Comunidad Valenciana",
     "Numero Defunciones CP M": 216,
     "Numero Defunciones CP H": 650,
@@ -85,7 +85,7 @@
   },
   {
     "Codigo": "07",
-    "Provincia": "Balears, Illes",
+    "Provincia": "Balears",
     "Comunidad": "Balears, Illes",
     "Numero Defunciones CP M": 116,
     "Numero Defunciones CP H": 368,
@@ -155,7 +155,7 @@
   },
   {
     "Codigo": "12",
-    "Provincia": "Castellón/Castelló",
+    "Provincia": "Castellón",
     "Comunidad": "Comunidad Valenciana",
     "Numero Defunciones CP M": 61,
     "Numero Defunciones CP H": 233,
@@ -197,7 +197,7 @@
   },
   {
     "Codigo": "15",
-    "Provincia": "Coruña, A",
+    "Provincia": "A Coruña",
     "Comunidad": "Galicia",
     "Numero Defunciones CP M": 146,
     "Numero Defunciones CP H": 511,
