@@ -93,36 +93,35 @@ const SpainMap = React.memo((props) => {
   return (
     <div className='spain-map' data-tip='' data-for='toolitpMap'>
       {console.log("RENDERING")}
-      <UncontrolledReactSVGPanZoom width={960} height={520} background='#FFFFFF'>
-      <svg className={styles.mapa} viewBox='100 0 730 520'>
-        <g className='ESP_adm1'>
-          <CanaryIslandsContainer closed={false} />
-          {geoFile.map((d, i) => {
-            return <path
-              className={`map-region`}
-              d={geoPath().projection(projection)(d)}
-              fill={coloringMap(d.properties[selected])}
-              key={`path-${i}`}
-              onMouseEnter={() => updateTooltip(d.properties)}
-              onMouseLeave={() => updateTooltip('')}
-              onClick={(evt) => handleClick(evt)}
-            />
-          })}
-          
-          <foreignObject width="100" height="200" x="680" y="390">
-            <div>
-            {colorList.slice(0, selected === 'Radon' ? 3 : 5).map((d,i) => {
-              const num = selected === 'Radon' ? 3 : colorsNumber
-              return <div key={`leg-${i}`} className={'legend-box'}>
-                <div className={'legend-color'} style={{backgroundColor: d}}></div>
-                <p className={'legend-numbers'}>{`${Math.round((maxValue-(i)*(maxValue-minValue)/num) * 100) / 100}-${Math.round((maxValue-(i+1)*(maxValue-minValue)/num) * 100) / 100}`}
-                </p>
-              </div>
-             })}
-             </div>
-          </foreignObject>
-        </g>
-      </svg>
+      <UncontrolledReactSVGPanZoom width={1217} height={800} background='#FFFFFF'>
+        <svg className={styles.mapa} viewBox="0 0 0 0">
+          <g className='ESP_adm1' transform="translate(-40,40), scale(1.45, 1.45)">
+            <CanaryIslandsContainer closed={false} />
+            {geoFile.map((d, i) => {
+              return <path
+                className={`map-region`}
+                d={geoPath().projection(projection)(d)}
+                fill={coloringMap(d.properties[selected])}
+                key={`path-${i}`}
+                onMouseEnter={() => updateTooltip(d.properties)}
+                onMouseLeave={() => updateTooltip('')}
+                onClick={(evt) => handleClick(evt)}
+              />
+            })}
+
+            <foreignObject width="100" height="200" x="150" y="80">
+              <div>
+              {colorList.slice(0, selected === 'Radon' ? 3 : 5).map((d,i) => {
+                return <div key={`leg-${i}`} className={'legend-box'}>
+                  <div className={'legend-color'} style={{backgroundColor: d}}></div>
+                  <p className={'legend-numbers'}>{`${Math.round((maxValue-(i)*(maxValue-minValue)/colorsNumber) * 100) / 100}-${Math.round((maxValue-(i+1)*(maxValue-minValue)/colorsNumber) * 100) / 100}`}
+                  </p>
+                </div>
+               })}
+               </div>
+            </foreignObject>
+          </g>
+        </svg>
       </UncontrolledReactSVGPanZoom>
     </div>
   )
