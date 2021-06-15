@@ -20,7 +20,7 @@ const SpainMap = React.memo((props) => {
   const colorsNumber = Math.min(5,colorList.length)
   const maxValue = selected.map((sel) => Math.max.apply(Math, data.map(k => k[sel])))
   const minValue = selected.map((sel) => Math.min.apply(Math, data.map(k => k[sel])))
-  const uniqueValues = (selected.length === 1) ? [...new Set(data.map(k => k[selected[0]]))] : null
+  const uniqueValues = (selected.length === 1) ? [...new Set(data.map(k => k[selected[0]]))].sort((a,b) => b-a) : null
   console.log("UNIQUE", uniqueValues) 
 
   var spainFeatures;
@@ -73,12 +73,11 @@ const SpainMap = React.memo((props) => {
       if (properties[selected[0]] >= minValue[0]) {
         return colorList[colorList.length-1]
       }
-      return "#bdc3c7"
+      return "#3373C4"
     }
     // MULTIPLE SELECTED => GENERATE RISK MAP
     else {
       var k = 0
-      console.log("NAME", properties.Provincia)
       for (var i=0; i < selected.length; i++) {
         k += (properties[selected[i]]-minValue[i])/(maxValue[i]-minValue[i])
       }
