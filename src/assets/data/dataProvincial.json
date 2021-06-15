@@ -7,11 +7,11 @@
     "Numero Defunciones CP H": 116,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 19534.53,
+    "Fumadores": 19.53,
     "Edad media": 44.59,
-    "Poblacion": 388270,
-    "Numero Defunciones CP M 100000 habitantes": 8.2,
-    "Numero Defunciones CP H 100000 habitantes": 29.9
+    "Poblacion": 333940,
+    "Numero Defunciones CP M 100000 habitantes": 9.6,
+    "Numero Defunciones CP H 100000 habitantes": 34.7
   },
   {
     "Codigo": "02",
@@ -21,11 +21,11 @@
     "Numero Defunciones CP H": 129,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 24159.16,
+    "Fumadores": 24.16,
     "Edad media": 43.58,
-    "Poblacion": 1879888,
-    "Numero Defunciones CP M 100000 habitantes": 1.3,
-    "Numero Defunciones CP H 100000 habitantes": 6.9
+    "Poblacion": 388270,
+    "Numero Defunciones CP M 100000 habitantes": 6.4,
+    "Numero Defunciones CP H 100000 habitantes": 33.2
   },
   {
     "Codigo": "03",
@@ -35,11 +35,11 @@
     "Numero Defunciones CP H": 650,
     "Arsenico": 0.4,
     "Radon": 0,
-    "Fumadores": 24470.77,
+    "Fumadores": 24.47,
     "Edad media": 43.78,
-    "Poblacion": 727945,
-    "Numero Defunciones CP M 100000 habitantes": 29.7,
-    "Numero Defunciones CP H 100000 habitantes": 89.3
+    "Poblacion": 1879888,
+    "Numero Defunciones CP M 100000 habitantes": 11.5,
+    "Numero Defunciones CP H 100000 habitantes": 34.6
   },
   {
     "Codigo": "04",
@@ -49,11 +49,11 @@
     "Numero Defunciones CP H": 260,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 23174.81,
+    "Fumadores": 23.17,
     "Edad media": 40.41,
-    "Poblacion": 333940,
-    "Numero Defunciones CP M 100000 habitantes": 15.6,
-    "Numero Defunciones CP H 100000 habitantes": 77.9
+    "Poblacion": 727945,
+    "Numero Defunciones CP M 100000 habitantes": 7.1,
+    "Numero Defunciones CP H 100000 habitantes": 35.7
   },
   {
     "Codigo": "05",
@@ -63,11 +63,11 @@
     "Numero Defunciones CP H": 74,
     "Arsenico": 0.6,
     "Radon": 1,
-    "Fumadores": 21872.74,
+    "Fumadores": 21.87,
     "Edad media": 47.65,
-    "Poblacion": 1018784,
-    "Numero Defunciones CP M 100000 habitantes": 1.8,
-    "Numero Defunciones CP H 100000 habitantes": 7.3
+    "Poblacion": 157664,
+    "Numero Defunciones CP M 100000 habitantes": 11.4,
+    "Numero Defunciones CP H 100000 habitantes": 46.9
   },
   {
     "Codigo": "06",
@@ -77,25 +77,25 @@
     "Numero Defunciones CP H": 319,
     "Arsenico": 0.4,
     "Radon": 1,
-    "Fumadores": 23737.22,
+    "Fumadores": 23.74,
     "Edad media": 43.68,
-    "Poblacion": 157664,
-    "Numero Defunciones CP M 100000 habitantes": 26,
-    "Numero Defunciones CP H 100000 habitantes": 202.3
+    "Poblacion": 672137,
+    "Numero Defunciones CP M 100000 habitantes": 6.1,
+    "Numero Defunciones CP H 100000 habitantes": 47.5
   },
   {
     "Codigo": "07",
-    "Provincia": "Balears",
+    "Provincia": "Balears, Illes",
     "Comunidad": "Balears, Illes",
     "Numero Defunciones CP M": 116,
     "Numero Defunciones CP H": 368,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 23548.36,
+    "Fumadores": 23.55,
     "Edad media": 41.68,
-    "Poblacion": 672137,
-    "Numero Defunciones CP M 100000 habitantes": 17.3,
-    "Numero Defunciones CP H 100000 habitantes": 54.8
+    "Poblacion": 1171543,
+    "Numero Defunciones CP M 100000 habitantes": 9.9,
+    "Numero Defunciones CP H 100000 habitantes": 31.4
   },
   {
     "Codigo": "08",
@@ -105,11 +105,11 @@
     "Numero Defunciones CP H": 1986,
     "Arsenico": 1,
     "Radon": 1,
-    "Fumadores": 21704.27,
+    "Fumadores": 21.7,
     "Edad media": 42.98,
-    "Poblacion": 1171543,
-    "Numero Defunciones CP M 100000 habitantes": 49.3,
-    "Numero Defunciones CP H 100000 habitantes": 169.5
+    "Poblacion": 5743402,
+    "Numero Defunciones CP M 100000 habitantes": 10.1,
+    "Numero Defunciones CP H 100000 habitantes": 34.6
   },
   {
     "Codigo": "09",
@@ -119,11 +119,11 @@
     "Numero Defunciones CP H": 126,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22486.26,
+    "Fumadores": 22.49,
     "Edad media": 46.72,
-    "Poblacion": 5743402,
-    "Numero Defunciones CP M 100000 habitantes": 0.7,
-    "Numero Defunciones CP H 100000 habitantes": 2.2
+    "Poblacion": 357650,
+    "Numero Defunciones CP M 100000 habitantes": 10.6,
+    "Numero Defunciones CP H 100000 habitantes": 35.2
   },
   {
     "Codigo": "10",
@@ -133,11 +133,11 @@
     "Numero Defunciones CP H": 202,
     "Arsenico": 0.3,
     "Radon": 2,
-    "Fumadores": 23103.21,
+    "Fumadores": 23.1,
     "Edad media": 46.28,
-    "Poblacion": 1159443,
-    "Numero Defunciones CP M 100000 habitantes": 3.6,
-    "Numero Defunciones CP H 100000 habitantes": 17.4
+    "Poblacion": 391850,
+    "Numero Defunciones CP M 100000 habitantes": 10.7,
+    "Numero Defunciones CP H 100000 habitantes": 51.6
   },
   {
     "Codigo": "11",
@@ -147,11 +147,11 @@
     "Numero Defunciones CP H": 442,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22658.47,
+    "Fumadores": 22.66,
     "Edad media": 41.87,
-    "Poblacion": 357650,
-    "Numero Defunciones CP M 100000 habitantes": 28.5,
-    "Numero Defunciones CP H 100000 habitantes": 123.6
+    "Poblacion": 1244049,
+    "Numero Defunciones CP M 100000 habitantes": 8.2,
+    "Numero Defunciones CP H 100000 habitantes": 35.5
   },
   {
     "Codigo": "12",
@@ -161,11 +161,11 @@
     "Numero Defunciones CP H": 233,
     "Arsenico": 0.6,
     "Radon": 0,
-    "Fumadores": 24429.81,
+    "Fumadores": 24.43,
     "Edad media": 43.55,
-    "Poblacion": 391850,
-    "Numero Defunciones CP M 100000 habitantes": 15.6,
-    "Numero Defunciones CP H 100000 habitantes": 59.5
+    "Poblacion": 585590,
+    "Numero Defunciones CP M 100000 habitantes": 10.4,
+    "Numero Defunciones CP H 100000 habitantes": 39.8
   },
   {
     "Codigo": "13",
@@ -175,11 +175,11 @@
     "Numero Defunciones CP H": 231,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 23936.33,
+    "Fumadores": 23.94,
     "Edad media": 44.08,
-    "Poblacion": 1244049,
-    "Numero Defunciones CP M 100000 habitantes": 3.1,
-    "Numero Defunciones CP H 100000 habitantes": 18.6
+    "Poblacion": 495045,
+    "Numero Defunciones CP M 100000 habitantes": 7.7,
+    "Numero Defunciones CP H 100000 habitantes": 46.7
   },
   {
     "Codigo": "14",
@@ -189,25 +189,25 @@
     "Numero Defunciones CP H": 262,
     "Arsenico": 0.3,
     "Radon": 1,
-    "Fumadores": 21865.72,
+    "Fumadores": 21.87,
     "Edad media": 43.48,
-    "Poblacion": 582905,
-    "Numero Defunciones CP M 100000 habitantes": 11.5,
-    "Numero Defunciones CP H 100000 habitantes": 44.9
+    "Poblacion": 781451,
+    "Numero Defunciones CP M 100000 habitantes": 8.6,
+    "Numero Defunciones CP H 100000 habitantes": 33.5
   },
   {
     "Codigo": "15",
-    "Provincia": "A Coruña",
+    "Provincia": "Coruña, A",
     "Comunidad": "Galicia",
     "Numero Defunciones CP M": 146,
     "Numero Defunciones CP H": 511,
     "Arsenico": 1.8,
     "Radon": 1,
-    "Fumadores": 17818.82,
+    "Fumadores": 17.82,
     "Edad media": 47.18,
-    "Poblacion": 585590,
-    "Numero Defunciones CP M 100000 habitantes": 24.9,
-    "Numero Defunciones CP H 100000 habitantes": 87.3
+    "Poblacion": 1121815,
+    "Numero Defunciones CP M 100000 habitantes": 13,
+    "Numero Defunciones CP H 100000 habitantes": 45.6
   },
   {
     "Codigo": "16",
@@ -217,11 +217,11 @@
     "Numero Defunciones CP H": 72,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 23041.77,
+    "Fumadores": 23.04,
     "Edad media": 45.85,
-    "Poblacion": 495045,
-    "Numero Defunciones CP M 100000 habitantes": 2.2,
-    "Numero Defunciones CP H 100000 habitantes": 14.5
+    "Poblacion": 196139,
+    "Numero Defunciones CP M 100000 habitantes": 5.6,
+    "Numero Defunciones CP H 100000 habitantes": 36.7
   },
   {
     "Codigo": "17",
@@ -231,9 +231,9 @@
     "Numero Defunciones CP H": 246,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 21999.56,
+    "Fumadores": 22,
     "Edad media": 42.37,
-    "Poblacion": 781451,
+    "Poblacion": 781788,
     "Numero Defunciones CP M 100000 habitantes": 9,
     "Numero Defunciones CP H 100000 habitantes": 31.5
   },
@@ -245,11 +245,11 @@
     "Numero Defunciones CP H": 271,
     "Arsenico": 0.3,
     "Radon": 0,
-    "Fumadores": 22215.57,
+    "Fumadores": 22.22,
     "Edad media": 42.58,
-    "Poblacion": 1121815,
-    "Numero Defunciones CP M 100000 habitantes": 7,
-    "Numero Defunciones CP H 100000 habitantes": 24.2
+    "Poblacion": 919168,
+    "Numero Defunciones CP M 100000 habitantes": 8.6,
+    "Numero Defunciones CP H 100000 habitantes": 29.5
   },
   {
     "Codigo": "19",
@@ -259,11 +259,11 @@
     "Numero Defunciones CP H": 69,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 24900.56,
+    "Fumadores": 24.9,
     "Edad media": 41.77,
-    "Poblacion": 196139,
-    "Numero Defunciones CP M 100000 habitantes": 10.7,
-    "Numero Defunciones CP H 100000 habitantes": 35.2
+    "Poblacion": 261995,
+    "Numero Defunciones CP M 100000 habitantes": 8,
+    "Numero Defunciones CP H 100000 habitantes": 26.3
   },
   {
     "Codigo": "20",
@@ -273,7 +273,7 @@
     "Numero Defunciones CP H": 289,
     "Arsenico": 0.5,
     "Radon": 1,
-    "Fumadores": 19073.77,
+    "Fumadores": 19.07,
     "Edad media": 45.25,
     "Poblacion": 727121,
     "Numero Defunciones CP M 100000 habitantes": 13.5,
@@ -287,11 +287,11 @@
     "Numero Defunciones CP H": 197,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22663.87,
+    "Fumadores": 22.66,
     "Edad media": 41.92,
-    "Poblacion": 781788,
-    "Numero Defunciones CP M 100000 habitantes": 4.3,
-    "Numero Defunciones CP H 100000 habitantes": 25.2
+    "Poblacion": 524278,
+    "Numero Defunciones CP M 100000 habitantes": 6.5,
+    "Numero Defunciones CP H 100000 habitantes": 37.6
   },
   {
     "Codigo": "22",
@@ -301,11 +301,11 @@
     "Numero Defunciones CP H": 78,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 23357.24,
+    "Fumadores": 23.36,
     "Edad media": 45.62,
-    "Poblacion": 919168,
-    "Numero Defunciones CP M 100000 habitantes": 2.3,
-    "Numero Defunciones CP H 100000 habitantes": 8.5
+    "Poblacion": 222687,
+    "Numero Defunciones CP M 100000 habitantes": 9.4,
+    "Numero Defunciones CP H 100000 habitantes": 35
   },
   {
     "Codigo": "23",
@@ -315,11 +315,11 @@
     "Numero Defunciones CP H": 228,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 21816.8,
+    "Fumadores": 21.82,
     "Edad media": 43.65,
-    "Poblacion": 261995,
-    "Numero Defunciones CP M 100000 habitantes": 15.6,
-    "Numero Defunciones CP H 100000 habitantes": 87
+    "Poblacion": 631381,
+    "Numero Defunciones CP M 100000 habitantes": 6.5,
+    "Numero Defunciones CP H 100000 habitantes": 36.1
   },
   {
     "Codigo": "24",
@@ -329,11 +329,11 @@
     "Numero Defunciones CP H": 223,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 21780.25,
+    "Fumadores": 21.78,
     "Edad media": 49.14,
-    "Poblacion": 524278,
-    "Numero Defunciones CP M 100000 habitantes": 10.9,
-    "Numero Defunciones CP H 100000 habitantes": 42.5
+    "Poblacion": 456439,
+    "Numero Defunciones CP M 100000 habitantes": 12.5,
+    "Numero Defunciones CP H 100000 habitantes": 48.9
   },
   {
     "Codigo": "25",
@@ -343,11 +343,11 @@
     "Numero Defunciones CP H": 156,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 21756.91,
+    "Fumadores": 21.76,
     "Edad media": 43.51,
-    "Poblacion": 222687,
-    "Numero Defunciones CP M 100000 habitantes": 16.2,
-    "Numero Defunciones CP H 100000 habitantes": 70.1
+    "Poblacion": 438517,
+    "Numero Defunciones CP M 100000 habitantes": 8.2,
+    "Numero Defunciones CP H 100000 habitantes": 35.6
   },
   {
     "Codigo": "26",
@@ -357,11 +357,11 @@
     "Numero Defunciones CP H": 121,
     "Arsenico": 0.3,
     "Radon": 0,
-    "Fumadores": 19505.51,
+    "Fumadores": 19.51,
     "Edad media": 44.64,
-    "Poblacion": 631381,
-    "Numero Defunciones CP M 100000 habitantes": 6.5,
-    "Numero Defunciones CP H 100000 habitantes": 19.2
+    "Poblacion": 319914,
+    "Numero Defunciones CP M 100000 habitantes": 12.8,
+    "Numero Defunciones CP H 100000 habitantes": 37.8
   },
   {
     "Codigo": "27",
@@ -371,11 +371,11 @@
     "Numero Defunciones CP H": 167,
     "Arsenico": 1.8,
     "Radon": 1,
-    "Fumadores": 16850.97,
+    "Fumadores": 16.85,
     "Edad media": 49.97,
-    "Poblacion": 456439,
-    "Numero Defunciones CP M 100000 habitantes": 8.8,
-    "Numero Defunciones CP H 100000 habitantes": 36.6
+    "Poblacion": 327946,
+    "Numero Defunciones CP M 100000 habitantes": 12.2,
+    "Numero Defunciones CP H 100000 habitantes": 50.9
   },
   {
     "Codigo": "28",
@@ -385,11 +385,11 @@
     "Numero Defunciones CP H": 1916,
     "Arsenico": 0.9,
     "Radon": 1,
-    "Fumadores": 18604.61,
+    "Fumadores": 18.6,
     "Edad media": 42.52,
-    "Poblacion": 438517,
-    "Numero Defunciones CP M 100000 habitantes": 161,
-    "Numero Defunciones CP H 100000 habitantes": 436.9
+    "Poblacion": 6779888,
+    "Numero Defunciones CP M 100000 habitantes": 10.4,
+    "Numero Defunciones CP H 100000 habitantes": 28.3
   },
   {
     "Codigo": "29",
@@ -399,11 +399,11 @@
     "Numero Defunciones CP H": 567,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22508.49,
+    "Fumadores": 22.51,
     "Edad media": 42.35,
-    "Poblacion": 327946,
-    "Numero Defunciones CP M 100000 habitantes": 53.4,
-    "Numero Defunciones CP H 100000 habitantes": 172.9
+    "Poblacion": 1685920,
+    "Numero Defunciones CP M 100000 habitantes": 10.4,
+    "Numero Defunciones CP H 100000 habitantes": 33.6
   },
   {
     "Codigo": "30",
@@ -413,11 +413,11 @@
     "Numero Defunciones CP H": 476,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 23143.96,
+    "Fumadores": 23.14,
     "Edad media": 40.75,
-    "Poblacion": 6779888,
-    "Numero Defunciones CP M 100000 habitantes": 1.3,
-    "Numero Defunciones CP H 100000 habitantes": 7
+    "Poblacion": 1511251,
+    "Numero Defunciones CP M 100000 habitantes": 5.9,
+    "Numero Defunciones CP H 100000 habitantes": 31.5
   },
   {
     "Codigo": "31",
@@ -427,11 +427,11 @@
     "Numero Defunciones CP H": 250,
     "Arsenico": 0.2,
     "Radon": 0,
-    "Fumadores": 19884.94,
+    "Fumadores": 19.88,
     "Edad media": 43.42,
-    "Poblacion": 1685920,
-    "Numero Defunciones CP M 100000 habitantes": 5.3,
-    "Numero Defunciones CP H 100000 habitantes": 14.8
+    "Poblacion": 661197,
+    "Numero Defunciones CP M 100000 habitantes": 13.5,
+    "Numero Defunciones CP H 100000 habitantes": 37.8
   },
   {
     "Codigo": "32",
@@ -441,11 +441,11 @@
     "Numero Defunciones CP H": 142,
     "Arsenico": 0,
     "Radon": 2,
-    "Fumadores": 16418.47,
+    "Fumadores": 16.42,
     "Edad media": 50.82,
-    "Poblacion": 1511251,
-    "Numero Defunciones CP M 100000 habitantes": 2.7,
-    "Numero Defunciones CP H 100000 habitantes": 9.4
+    "Poblacion": 306650,
+    "Numero Defunciones CP M 100000 habitantes": 13.4,
+    "Numero Defunciones CP H 100000 habitantes": 46.3
   },
   {
     "Codigo": "33",
@@ -455,11 +455,11 @@
     "Numero Defunciones CP H": 575,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 23309.15,
+    "Fumadores": 23.31,
     "Edad media": 48.54,
-    "Poblacion": 661197,
-    "Numero Defunciones CP M 100000 habitantes": 29.5,
-    "Numero Defunciones CP H 100000 habitantes": 87
+    "Poblacion": 1018784,
+    "Numero Defunciones CP M 100000 habitantes": 19.1,
+    "Numero Defunciones CP H 100000 habitantes": 56.4
   },
   {
     "Codigo": "34",
@@ -469,11 +469,11 @@
     "Numero Defunciones CP H": 69,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22307.37,
+    "Fumadores": 22.31,
     "Edad media": 48.19,
-    "Poblacion": 306650,
-    "Numero Defunciones CP M 100000 habitantes": 4.2,
-    "Numero Defunciones CP H 100000 habitantes": 22.5
+    "Poblacion": 160321,
+    "Numero Defunciones CP M 100000 habitantes": 8.1,
+    "Numero Defunciones CP H 100000 habitantes": 43
   },
   {
     "Codigo": "35",
@@ -483,11 +483,11 @@
     "Numero Defunciones CP H": 346,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22562.66,
+    "Fumadores": 22.56,
     "Edad media": 42.25,
-    "Poblacion": 160321,
-    "Numero Defunciones CP M 100000 habitantes": 91.1,
-    "Numero Defunciones CP H 100000 habitantes": 215.8
+    "Poblacion": 1131065,
+    "Numero Defunciones CP M 100000 habitantes": 12.9,
+    "Numero Defunciones CP H 100000 habitantes": 30.6
   },
   {
     "Codigo": "36",
@@ -497,11 +497,11 @@
     "Numero Defunciones CP H": 387,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 18184.89,
+    "Fumadores": 18.18,
     "Edad media": 45.88,
-    "Poblacion": 1131065,
-    "Numero Defunciones CP M 100000 habitantes": 11,
-    "Numero Defunciones CP H 100000 habitantes": 34.2
+    "Poblacion": 945408,
+    "Numero Defunciones CP M 100000 habitantes": 13.1,
+    "Numero Defunciones CP H 100000 habitantes": 40.9
   },
   {
     "Codigo": "37",
@@ -511,11 +511,11 @@
     "Numero Defunciones CP H": 147,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 21805.49,
+    "Fumadores": 21.81,
     "Edad media": 48.27,
-    "Poblacion": 945408,
-    "Numero Defunciones CP M 100000 habitantes": 4,
-    "Numero Defunciones CP H 100000 habitantes": 15.5
+    "Poblacion": 329245,
+    "Numero Defunciones CP M 100000 habitantes": 11.5,
+    "Numero Defunciones CP H 100000 habitantes": 44.6
   },
   {
     "Codigo": "38",
@@ -525,11 +525,11 @@
     "Numero Defunciones CP H": 320,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22256.73,
+    "Fumadores": 22.26,
     "Edad media": 43.43,
-    "Poblacion": 319914,
-    "Numero Defunciones CP M 100000 habitantes": 42.8,
-    "Numero Defunciones CP H 100000 habitantes": 100
+    "Poblacion": 1044887,
+    "Numero Defunciones CP M 100000 habitantes": 13.1,
+    "Numero Defunciones CP H 100000 habitantes": 30.6
   },
   {
     "Codigo": "39",
@@ -539,11 +539,11 @@
     "Numero Defunciones CP H": 262,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22516.6,
+    "Fumadores": 22.52,
     "Edad media": 45.85,
-    "Poblacion": 329245,
-    "Numero Defunciones CP M 100000 habitantes": 31.9,
-    "Numero Defunciones CP H 100000 habitantes": 79.6
+    "Poblacion": 582905,
+    "Numero Defunciones CP M 100000 habitantes": 18,
+    "Numero Defunciones CP H 100000 habitantes": 44.9
   },
   {
     "Codigo": "40",
@@ -553,11 +553,11 @@
     "Numero Defunciones CP H": 54,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 22528.1,
+    "Fumadores": 22.53,
     "Edad media": 45.95,
-    "Poblacion": 1044887,
-    "Numero Defunciones CP M 100000 habitantes": 2,
-    "Numero Defunciones CP H 100000 habitantes": 5.2
+    "Poblacion": 153478,
+    "Numero Defunciones CP M 100000 habitantes": 13.7,
+    "Numero Defunciones CP H 100000 habitantes": 35.2
   },
   {
     "Codigo": "41",
@@ -567,11 +567,11 @@
     "Numero Defunciones CP H": 719,
     "Arsenico": 0.5,
     "Radon": 0,
-    "Fumadores": 22570.33,
+    "Fumadores": 22.57,
     "Edad media": 41.54,
-    "Poblacion": 153478,
-    "Numero Defunciones CP M 100000 habitantes": 95.1,
-    "Numero Defunciones CP H 100000 habitantes": 468.5
+    "Poblacion": 1950219,
+    "Numero Defunciones CP M 100000 habitantes": 7.5,
+    "Numero Defunciones CP H 100000 habitantes": 36.9
   },
   {
     "Codigo": "42",
@@ -581,11 +581,11 @@
     "Numero Defunciones CP H": 41,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 21812.83,
+    "Fumadores": 21.81,
     "Edad media": 47.52,
-    "Poblacion": 1950219,
-    "Numero Defunciones CP M 100000 habitantes": 0.4,
-    "Numero Defunciones CP H 100000 habitantes": 2.1
+    "Poblacion": 88884,
+    "Numero Defunciones CP M 100000 habitantes": 7.9,
+    "Numero Defunciones CP H 100000 habitantes": 46.1
   },
   {
     "Codigo": "43",
@@ -595,11 +595,11 @@
     "Numero Defunciones CP H": 314,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 21782.49,
+    "Fumadores": 21.78,
     "Edad media": 42.93,
-    "Poblacion": 88884,
-    "Numero Defunciones CP M 100000 habitantes": 66.4,
-    "Numero Defunciones CP H 100000 habitantes": 353.3
+    "Poblacion": 816772,
+    "Numero Defunciones CP M 100000 habitantes": 7.2,
+    "Numero Defunciones CP H 100000 habitantes": 38.4
   },
   {
     "Codigo": "44",
@@ -609,11 +609,11 @@
     "Numero Defunciones CP H": 49,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22755.14,
+    "Fumadores": 22.76,
     "Edad media": 46.58,
-    "Poblacion": 816772,
-    "Numero Defunciones CP M 100000 habitantes": 0.9,
-    "Numero Defunciones CP H 100000 habitantes": 6
+    "Poblacion": 134176,
+    "Numero Defunciones CP M 100000 habitantes": 5.2,
+    "Numero Defunciones CP H 100000 habitantes": 36.5
   },
   {
     "Codigo": "45",
@@ -623,25 +623,25 @@
     "Numero Defunciones CP H": 303,
     "Arsenico": 0.3,
     "Radon": 1,
-    "Fumadores": 24438.93,
+    "Fumadores": 24.44,
     "Edad media": 42.39,
-    "Poblacion": 134176,
-    "Numero Defunciones CP M 100000 habitantes": 35.8,
-    "Numero Defunciones CP H 100000 habitantes": 225.8
+    "Poblacion": 703772,
+    "Numero Defunciones CP M 100000 habitantes": 6.8,
+    "Numero Defunciones CP H 100000 habitantes": 43.1
   },
   {
     "Codigo": "46",
-    "Provincia": "Valencia/València",
+    "Provincia": "Valencia",
     "Comunidad": "Comunidad Valenciana",
     "Numero Defunciones CP M": 301,
     "Numero Defunciones CP H": 922,
     "Arsenico": 0.7,
     "Radon": 0,
-    "Fumadores": 24497.42,
+    "Fumadores": 24.5,
     "Edad media": 43.42,
-    "Poblacion": 703772,
-    "Numero Defunciones CP M 100000 habitantes": 42.8,
-    "Numero Defunciones CP H 100000 habitantes": 131
+    "Poblacion": 2591875,
+    "Numero Defunciones CP M 100000 habitantes": 11.6,
+    "Numero Defunciones CP H 100000 habitantes": 35.6
   },
   {
     "Codigo": "47",
@@ -651,11 +651,11 @@
     "Numero Defunciones CP H": 223,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 22739.04,
+    "Fumadores": 22.74,
     "Edad media": 46.2,
-    "Poblacion": 2591875,
-    "Numero Defunciones CP M 100000 habitantes": 2.9,
-    "Numero Defunciones CP H 100000 habitantes": 8.6
+    "Poblacion": 520649,
+    "Numero Defunciones CP M 100000 habitantes": 14.2,
+    "Numero Defunciones CP H 100000 habitantes": 42.8
   },
   {
     "Codigo": "48",
@@ -665,11 +665,11 @@
     "Numero Defunciones CP H": 497,
     "Arsenico": 0.3,
     "Radon": 0,
-    "Fumadores": 19082.79,
+    "Fumadores": 19.08,
     "Edad media": 46.14,
-    "Poblacion": 520649,
-    "Numero Defunciones CP M 100000 habitantes": 31.3,
-    "Numero Defunciones CP H 100000 habitantes": 95.5
+    "Poblacion": 1159443,
+    "Numero Defunciones CP M 100000 habitantes": 14.1,
+    "Numero Defunciones CP H 100000 habitantes": 42.9
   },
   {
     "Codigo": "49",
@@ -679,7 +679,7 @@
     "Numero Defunciones CP H": 96,
     "Arsenico": 0,
     "Radon": 1,
-    "Fumadores": 20926,
+    "Fumadores": 20.93,
     "Edad media": 50.95,
     "Poblacion": 170588,
     "Numero Defunciones CP M 100000 habitantes": 11.1,
@@ -693,7 +693,7 @@
     "Numero Defunciones CP H": 415,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 23757.32,
+    "Fumadores": 23.76,
     "Edad media": 44.55,
     "Poblacion": 972528,
     "Numero Defunciones CP M 100000 habitantes": 10.9,
@@ -707,7 +707,7 @@
     "Numero Defunciones CP H": 18,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 23953.01,
+    "Fumadores": 23.95,
     "Edad media": 37.94,
     "Poblacion": 84202,
     "Numero Defunciones CP M 100000 habitantes": 4.8,
@@ -721,7 +721,7 @@
     "Numero Defunciones CP H": 25,
     "Arsenico": 0,
     "Radon": 0,
-    "Fumadores": 18590.75,
+    "Fumadores": 18.59,
     "Edad media": 35.72,
     "Poblacion": 87076,
     "Numero Defunciones CP M 100000 habitantes": 12.6,
