@@ -2,13 +2,13 @@
 
 Aquest és un projecte realitzat per estudiants de la Facultat d'Informàtica De Barcelona amb l'ajuda i el suport de l'Hospital Clínic, per a l'assignatura de Projectes Aplicats d'Enginyeria amb la finalitat de trobar a Espanya quines zones tenen una incidència més gran de carcirògens, per tal de poder prendre les mesures corresponents.
 
-# Integrants de l'equip
+## Integrants de l'equip
 
-Eloi Cruz Harillo
-Joan Febrer Nafría
-David Gili Fernandez De Romarategui
-Alex Gonzàlez Godoy
-Laura Mezquita
+Eloi Cruz Harillo.\
+Joan Febrer Nafría.\
+David Gili Fernandez De Romarategui.\
+Alex Gonzàlez Godoy.\
+Laura Mezquita.\
  
 
 # Com inicialitzar l'aplicació.
