@@ -8,7 +8,7 @@ Eloi Cruz Harillo.\
 Joan Febrer Nafría.\
 David Gili Fernandez De Romarategui.\
 Alex Gonzàlez Godoy.\
-Laura Mezquita.\
+Laura Mezquita.
  
 
 # Com inicialitzar l'aplicació.
