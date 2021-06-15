@@ -18,8 +18,10 @@ const SpainMap = React.memo((props) => {
   const { data, selected, scale, updateTooltip } = props
   const colorList = ['#02124C', '#003396', '#3373C4', '#73B9EE', '#86CEFA']
   const colorsNumber = Math.min(5,colorList.length)
-  const maxValue = Math.max.apply(Math, data.map(k => k[selected]))
-  const minValue = Math.min.apply(Math, data.map(k => k[selected]))
+  const maxValue = selected.map((sel) => Math.max.apply(Math, data.map(k => k[sel])))
+  const minValue = selected.map((sel) => Math.min.apply(Math, data.map(k => k[sel])))
+  const uniqueValues = (selected.length === 1) ? [...new Set(data.map(k => k[selected[0]]))] : null
+  console.log("UNIQUE", uniqueValues) 
 
   var spainFeatures;
   var object;
@@ -57,21 +59,41 @@ const SpainMap = React.memo((props) => {
 
   const geoFile = object
 
-  const coloringMap = (porcentaje) => {
-    const k = (maxValue-minValue)/colorsNumber;
-    for (var i=0; i < colorsNumber; i++) {
-      if (porcentaje >= maxValue-k*(i+1)) {
-        return colorList[i]
-      }
-    }
-    if (porcentaje >= minValue) {
-      return colorList[colorList.length-1]
-    }
-    return "#bdc3c7"
-  }
+  var number = (selected.length === 1) ? Math.min(colorsNumber, [...new Set(data.map(k => k[selected[0]]))].length) : colorsNumber
 
-  const handleClick = (evt) => {
-    console.log(evt)
+  const coloringMap = (properties) => {
+    // ONLY 1 SELECTED
+    if (selected.length === 1) {
+      const k = (maxValue[0]-minValue[0])/number;
+      for (var i=0; i < number; i++) {
+        if (properties[selected[0]] >= maxValue[0]-k*(i+1)) {
+          return colorList[i]
+        }
+      }
+      if (properties[selected[0]] >= minValue[0]) {
+        return colorList[colorList.length-1]
+      }
+      return "#bdc3c7"
+    }
+    // MULTIPLE SELECTED => GENERATE RISK MAP
+    else {
+      var k = 0
+      console.log("NAME", properties.Provincia)
+      for (var i=0; i < selected.length; i++) {
+        k += (properties[selected[i]]-minValue[i])/(maxValue[i]-minValue[i])
+      }
+      k /= selected.length
+
+      for (var i=0; i < colorsNumber; i++) {
+        if (k >=1.0-0.2*(i+1)) {
+          return colorList[i]
+        }
+      }
+      if (k >= 0.0) {
+        return colorList[colorList.length-1]
+      }
+      return "#bdc3c7"
+    }
   }
 
   const CanaryIslandsContainer = ({ closed }) => {
@@ -93,7 +115,7 @@ const SpainMap = React.memo((props) => {
   return (
     <div className='spain-map' data-tip='' data-for='toolitpMap'>
       {console.log("RENDERING")}
-      <UncontrolledReactSVGPanZoom width={1217} height={854} background='#FFFFFF'>
+      <UncontrolledReactSVGPanZoom width={1217} height={854} background='#FFFFFF' miniatureProps={{position:'none'}} toolbarProps={{SVGAlignX:'center', SVGAlignY:'center'}}>
         <svg className={styles.mapa} viewBox="0 0 0 0">
           <g className='ESP_adm1' transform="translate(-40,70), scale(1.45, 1.45)">
             <CanaryIslandsContainer closed={false} />
@@ -101,22 +123,26 @@ const SpainMap = React.memo((props) => {
               return <path
                 className={`map-region`}
                 d={geoPath().projection(projection)(d)}
-                fill={coloringMap(d.properties[selected])}
+                fill={coloringMap(d.properties)}
                 key={`path-${i}`}
                 onMouseEnter={() => updateTooltip(d.properties)}
                 onMouseLeave={() => updateTooltip('')}
-                onClick={(evt) => handleClick(evt)}
               />
             })}
 
             <foreignObject width="100" height="300" x="150" y="50">
               <div>
-              {colorList.slice(0, selected === 'Radon' ? 3 : 5).map((d,i) => {
+              {
+              colorList.slice(0, uniqueValues ? uniqueValues.length : 5).map((d,i) => {
                 return <div key={`leg-${i}`} className={'legend-box'}>
                   <div className={'legend-color'} style={{backgroundColor: d}}></div>
-                  <p className={'legend-numbers'}>{`${Math.round((maxValue-(i)*(maxValue-minValue)/colorsNumber) * 100) / 100}-${Math.round((maxValue-(i+1)*(maxValue-minValue)/colorsNumber) * 100) / 100}`}
-                  </p>
-                </div>
+                  { selected.length > 1 ?
+                    <p className={'legend-numbers'}>{`${Math.round((1-(i*0.2))*10)/10}-${Math.round((1-((i+1)*0.2))*10)/10}`}</p>
+                  : (uniqueValues && uniqueValues.length <= colorsNumber ?
+                    <p className={'legend-numbers'}>{uniqueValues[i]}</p> :
+                    <p className={'legend-numbers'}>{`${Math.round((maxValue-(i)*(maxValue-minValue)/colorsNumber) * 100) / 100}-${Math.round((maxValue-(i+1)*(maxValue-minValue)/colorsNumber) * 100) / 100}`}</p>
+                  )}
+                  </div>
                })}
                </div>
             </foreignObject>

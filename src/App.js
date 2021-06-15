@@ -19,25 +19,34 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      display: "Radon",
+      display: ["Radon"],
       scale: "Provincia",
       data: dataProvincial,
       headers: Object.keys(dataProvincial[0]).slice(3)
     }
+    console.log("DEFAULT STATE")
+    console.log(this.state)
   }
 
   scaleValueChange(newValue) {
     this.setState({
       scale: newValue,
+      display: [],
       data: dataDict[newValue],
       headers: Object.keys(dataDict[newValue][0]).slice(3)
     })
   }
 
   selectorValueChange(newValue) {
-    this.setState({
-      display: newValue,
-    })
+    if (this.state.display.includes(newValue)) {
+      let filteredArray = this.state.display.filter(item => item !== newValue)
+      this.setState({ display: filteredArray })
+    }
+    else {
+      this.setState({
+        display: [...this.state.display, newValue]
+      })
+    }
   }
 
   render() {
@@ -67,7 +76,7 @@ class App extends Component {
               <div className="map-wrapper">
                 <div className="map-container">
                   <MapDisplayer
-                    map={display}
+                    selected={display}
                     data={data}
                     scale={scale}
                     />

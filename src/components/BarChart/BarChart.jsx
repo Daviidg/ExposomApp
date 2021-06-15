@@ -1,14 +1,16 @@
-import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Legend, Bar } from 'recharts'
+import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Legend, Bar, Tooltip } from 'recharts'
 //import EtariosToolTip from './tooltips'
 import styles from './styles/EtariosBarChart.module.css'
 import { withTranslation } from 'react-i18next';
 
 const maxLines = 60
+const colors = ['#6cd0ff', 'red', 'green', 'purple', 'orange', 'pink']
 
 const CustomBarChart = ({ data, selected, scale }) => {
-  const dataChart = normalizeBarCharData(data, selected, scale)
+  const cleanData = normalizeBarCharData(data, selected, scale)
+  const name = scale
 
-  if (!dataChart) return <></>
+  if (!cleanData) return <></>
 
   return (
     <>
@@ -16,7 +18,7 @@ const CustomBarChart = ({ data, selected, scale }) => {
         <div style={{ width: '100%', height: 600 }}>
           <ResponsiveContainer>
             <BarChart
-              data={dataChart}
+              data={cleanData}
               margin={{
                 top: 30,
                 right: 0,
@@ -25,11 +27,13 @@ const CustomBarChart = ({ data, selected, scale }) => {
               }}
             >
               <CartesianGrid strokeDasharray='3 3 3' />
-              <XAxis dataKey="name" angle={-45} textAnchor="end" interval={0} fontSize='18' fontWeight='200' stroke='white'/>
+              <XAxis dataKey={name} angle={-45} textAnchor="end" interval={0} fontSize='18' fontWeight='200' stroke='white'/>
               <YAxis interval='preserveStartEnd' width={80} scale='linear' fontSize='20' fontWeight='700' textAnchor='end' stroke='white'/>
-              {/*<Tooltip content={<EtariosToolTip />} />*/}
+              <Tooltip/>
               <Legend verticalAlign='top' style={{fontSize: '18px'}}/>
-              <Bar dataKey={selected} fill='#6cd0ff'/>
+              { selected.map((sel, i) => {
+                return <Bar dataKey={sel} fill={colors[i]}/>
+              })}
             </BarChart>
           </ResponsiveContainer>
         </div>
@@ -41,21 +45,7 @@ const CustomBarChart = ({ data, selected, scale }) => {
 const normalizeBarCharData = (data, selected, scale) => {
   if (!data || !selected || !scale) return
 
-  const dataChart = data.slice(0, maxLines).map((k, index) => {
-    var name;
-    if(scale === 'Municipio') name = k.Municipio;
-    else if(scale === 'Provincia') name = k.Provincia;
-    else if(scale === 'Comunidad Autónoma') name = k.Comunidad;
-
-    const info = k[selected]
-
-    return {
-      name,
-      [selected]: info
-    }
-  })
-
-  const sorted = dataChart.sort((a,b) => (a[selected] < b[selected]) ? 1 : ((b[selected] < a[selected]) ? -1 : 0))
+  const sorted = data.sort((a,b) => (a[selected[0]] < b[selected[0]]) ? 1 : ((b[selected[0]] < a[selected[0]]) ? -1 : 0)).slice(0, maxLines)
 
   return sorted
 }

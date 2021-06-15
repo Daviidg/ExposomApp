@@ -11,12 +11,16 @@ class Selector extends Component {
   }
 
   onChangeValue(event) {
+    console.log("PRESSED")
+    console.log(event.target.value)
     this.props.changeValue(event.target.value);
   }
 
   render() {
     const { scaleSelected, selectedOption, headers } = this.props;
-    console.log('headers = ', headers);
+
+    console.log("SELECTED OPTION")
+    console.log(selectedOption)
     let carcinogenos = [];
     let poblacional = [];
     headers.map((opt, index) => {
@@ -31,9 +35,7 @@ class Selector extends Component {
         }
       return (carcinogenos, poblacional);
     });
-    console.log('carcinogenos = ', carcinogenos);
-    console.log('poblacional = ', poblacional);
-    console.log('scaleSelected = ', scaleSelected);
+
     return(
       <div className="list-style">
         <h2>{this.props.t('exposome_list')}</h2>
@@ -47,7 +49,7 @@ class Selector extends Component {
                   <input
                     type="checkbox"
                     value={opt.name}
-                    checked={selectedOption === opt.name}
+                    checked={selectedOption.includes(opt.name)}
                     onChange={this.onChangeValue}
                   />
                 <span className="checkmark"></span>
@@ -67,7 +69,7 @@ class Selector extends Component {
                   <input
                     type="checkbox"
                     value={opt.name}
-                    checked={selectedOption === opt.name}
+                    checked={selectedOption.includes(opt.name)}
                     onChange={this.onChangeValue}
                   />
                 <span className="checkmark"></span>
@@ -82,9 +84,6 @@ class Selector extends Component {
   }
 }
 
-Selector.defaultProps = {
-  value: 'MapaEspanya1'
-}
 
 
 export default withTranslation()(Selector);
