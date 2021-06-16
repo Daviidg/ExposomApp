@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'TeXGyreBonum Regular';
-  src: local('TeXGyreBonum Regular'), url(./../../../assets/fonts/texgyrebonum-regular.otf) format('opentype');
+  src: local('TeXGyreBonum Regular'), url(./../../assets/fonts/texgyrebonum-regular.otf) format('opentype');
 }
 
 .chartContainer {

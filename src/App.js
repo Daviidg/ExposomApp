@@ -24,8 +24,6 @@ class App extends Component {
       data: dataProvincial,
       headers: Object.keys(dataProvincial[0]).slice(3)
     }
-    console.log("DEFAULT STATE")
-    console.log(this.state)
   }
 
   scaleValueChange(newValue) {

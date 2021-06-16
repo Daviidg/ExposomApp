@@ -11,16 +11,11 @@ class Selector extends Component {
   }
 
   onChangeValue(event) {
-    console.log("PRESSED")
-    console.log(event.target.value)
     this.props.changeValue(event.target.value);
   }
 
   render() {
-    const { scaleSelected, selectedOption, headers } = this.props;
-
-    console.log("SELECTED OPTION")
-    console.log(selectedOption)
+    const { selectedOption, headers } = this.props;
     let carcinogenos = [];
     let poblacional = [];
     headers.map((opt, index) => {

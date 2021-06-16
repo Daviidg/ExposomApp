@@ -10,7 +10,6 @@ import provincesMap from '../assets/maps/provinces2.json'
 import municipalitiesMap from '../assets/maps/municipalities2.json'
 import canaryIslandsMap from '../assets/maps/canaryIslands.json'
 import { UncontrolledReactSVGPanZoom } from 'react-svg-pan-zoom'
-//import NumberDigits from './NumberDigits'
 
 const projection = geoConicConformalSpain()
 
@@ -20,8 +19,7 @@ const SpainMap = React.memo((props) => {
   const colorsNumber = Math.min(5,colorList.length)
   const maxValue = selected.map((sel) => Math.max.apply(Math, data.map(k => k[sel])))
   const minValue = selected.map((sel) => Math.min.apply(Math, data.map(k => k[sel])))
-  const uniqueValues = (selected.length === 1) ? [...new Set(data.map(k => k[selected[0]]))].sort((a,b) => b-a) : null
-  console.log("UNIQUE", uniqueValues) 
+  const uniqueValues = (selected.length === 1) ? [...new Set(data.map(k => k[selected[0]]))].sort((a,b) => b-a) : null 
 
   var spainFeatures;
   var object;
@@ -113,7 +111,6 @@ const SpainMap = React.memo((props) => {
 
   return (
     <div className='spain-map' data-tip='' data-for='toolitpMap'>
-      {console.log("RENDERING")}
       <UncontrolledReactSVGPanZoom width={1217} height={854} background='#FFFFFF' miniatureProps={{position:'none'}} toolbarProps={{SVGAlignX:'center', SVGAlignY:'center'}}>
         <svg className={styles.mapa} viewBox="0 0 0 0">
           <g className='ESP_adm1' transform="translate(-40,70), scale(1.45, 1.45)">

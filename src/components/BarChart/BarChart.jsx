@@ -1,6 +1,5 @@
 import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Legend, Bar, Tooltip } from 'recharts'
-//import EtariosToolTip from './tooltips'
-import styles from './styles/EtariosBarChart.module.css'
+import './BarChart.css'
 import { withTranslation } from 'react-i18next';
 
 const maxLines = 60
@@ -14,7 +13,7 @@ const CustomBarChart = ({ data, selected, scale }) => {
 
   return (
     <>
-      <div className={styles.chartContainer}>
+      <div className="chartContainer">
         <div style={{ width: '100%', height: 600 }}>
           <ResponsiveContainer>
             <BarChart
